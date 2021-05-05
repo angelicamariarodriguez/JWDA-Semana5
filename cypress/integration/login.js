@@ -29,7 +29,7 @@ describe('Login', () => {
       fillOutInput(faker.internet.email(), '[id^=ember8]');
 	  fillOutInput(faker.random.alphaNumeric(), '[id^=ember10]');
 	  clickButton('[id^=ember12]', 0);
-	  cy.contains('Access denied.')
+	  cy.contains('Access denied.');
 	  cy.wait(delay);
   })
 
