@@ -31,10 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/automatization-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/automatization-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +49,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/integration" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wilso\Desktop\cypress\JWDA-Semana5\cypress\integration" />
+      <recent name="C:\Users\wilso\Desktop\cypress\JWDA-Semana5\cypress\page-objects" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,7 +68,7 @@
       <updated>1620342760686</updated>
       <workItem from="1620342761925" duration="7725000" />
       <workItem from="1620352963639" duration="4814000" />
-      <workItem from="1620394755663" duration="583000" />
+      <workItem from="1620394755663" duration="1502000" />
     </task>
     <servers />
   </component>
