@@ -1,8 +1,8 @@
 {
-    "projectId":"TSDL-Monkey-with-cypress",
+    "projectId":"Ghost-with-cypress",
     "baseUrl":"http://localhost:2368/ghost/#/signin",
     "env":{
-        "appName":"App prueba",
+        "appName":"Ghost",
         "events":50,
         "delay":300,
         "user_login":"prueba@gmail.com",
@@ -13,12 +13,16 @@
         "pctSelectors":16,
         "pctKeys":16,
         "pctSpKeys":16,
-        "pctPgNav":16
+        "pctPgNav":16,
+        "user": "arodriguezt9509@gmail.com",
+        "password": "M4r114t0rr3s*",
+        "newTitle": "Nuevo titulo",
+        "newDescription": "Nueva Descripcion"
     },
     "integrationFolder": "./cypress/integration",
     "pluginsFile": "./cypress/plugins/index.js",
     "pageLoadTimeout":120000,
     "defaultCommandTimeout":120000,
-    "testFiles": "manage-pages.spec.js",
+    "testFiles": "editar-configuracion-general-titulo-y-descripcion.js",
     "videosFolder":"./results"
 }
