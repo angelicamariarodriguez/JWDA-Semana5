@@ -1,4 +1,4 @@
-export class ManagePages {
+export class LoginPages {
    navigate(url) {
       cy.visit(url);
    }
