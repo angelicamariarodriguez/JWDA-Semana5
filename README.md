@@ -163,7 +163,7 @@ Ubicarse en la carpeta donde realizo la instalación de las node modules
 Posteriormente debe editar el siguente archivo, este archivo se encuentra dentro de la carpeta principal:
 
 ```
-automation-config.json
+costant-page.js
 ```
 En el archivo costant-page.js en la carpeta page-objects editar las siguientes variables: 
 
@@ -228,6 +228,10 @@ https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-
 
 
 # Video de la funcionalidad Create Posts
+
+
+https://user-images.githubusercontent.com/78746286/117514980-c1e72300-af5a-11eb-91f8-559ae5ecd82a.mp4
+
 
 # Video de la funcionalidad Manage Tags
 
