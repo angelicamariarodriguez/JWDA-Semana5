@@ -147,54 +147,33 @@ Este proyecto está probando las siguientes funcionalidades:
 
 # Ejecutando las pruebas ⚙️
 
-## 1. Manage Pages:
-Para ejecutar unicamente debe  hacer lo siguiente 
+Para ejecutar unicamente debe  hacer lo siguiente:
 
 ```
-Ubicarse en la carpeta donde realizo la instalacion de las node modules
+Ubicarse en la carpeta donde realizo la instalación de las node modules
 ```
 
 ![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
 
 
-Posteriormente debe editar los siguentes archivos, estos archivos se encuentra dentro de la carpetas de **integration** y la carpeta principal
+Posteriormente debe editar el siguente archivo, este archivo se encuentra dentro de la carpeta principal:
 
 ```
 automation-config.json
-login-pages.spec.js
-manage-pages.spec.js
 ```
+En el archivo automation-config.json editar las siguientes variables: 
 
-![Rutas](https://user-images.githubusercontent.com/78820446/117482499-1920cf80-af2a-11eb-9c3c-f1a46d2622a5.PNG)
+1. Remplace los valore de **user** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
 
-![COnfig](https://user-images.githubusercontent.com/78820446/117482587-33f34400-af2a-11eb-84de-ec7098e9a372.PNG)
+     **"user": "arodriguezt9509@gmail.com",
+       **"password": "*********",
 
-
-En el archivo automation-config.json editar las siguientes variables 
-
-**"user_login":"prueba@gmail.com"**
-**"user_password":"123456789*"**
-**"baseUrl":"http://localhost:2368/ghost/#/signin"**
-
-Para los archivos **login-pages.spec.js** y **manage-pages.spec.js** unicamente debe modificar lo siguiente 
-
-El archivo **login-pages.spec.js**
+2. Asegurese que la url sea la siguiente: 
+    **"baseUrl":"http://localhost:2368/ghost/#/signin"**
 
 
-**const url = Cypress.config('baseUrl') || "http://localhost:2368/"** Colocar la dirrecion de host unicamente ip y puerto finalizando con  / 
 
-![Login url](https://user-images.githubusercontent.com/78820446/117482753-70bf3b00-af2a-11eb-937f-e4dc51b8c4bb.PNG)
-
-
-El archivo **manage-pages.spec.js** modificar lo siguiente 
-
-**const user_login = Cypress.env('user_login') || ""** Dentro del terneario, es decir las comillas poner el usuario para el proyecto.
-**const user_password = Cypress.env('user_password') || ""**  Dentro del terneario, es decir las comillas poner la clave del usuario para el proyecto.
-**const url = Cypress.config('baseUrl') || ""** Dentro del terneario, es decir las comillas poner la dirrecion de la pagina de Ghost unicamente puerto e ip finalizando con / . ejemplo http://localhost:8530/
-
-![pages](https://user-images.githubusercontent.com/78820446/117482939-b7ad3080-af2a-11eb-98bb-ee8d1a44ecac.PNG)
-
-Por ultimo ya habiendo configurado los archivos y cambiando los datos por su  maquina unicamente queda ejecutar el siguiente comando 
+Por ultimo ya habiendo configurado los archivos y cambiando los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
 
 ```
 cypress run --headless
@@ -203,18 +182,6 @@ cypress run --headless
 
 Este comando empezara a ejecutar los test, deberan salir exitosos   en la consola 
 
-![Exitoso](https://user-images.githubusercontent.com/78820446/117483939-0c9d7680-af2c-11eb-8d3c-148406024ffb.PNG)
-
-## 2. Manage General Settings:
-
-**Antes** de ejecutar los escenarios de esta funcionalidad debe hacer las siguientes modificaciones:
-
-1. Vaya al archivo **automation-config.json** y remplace los valore de de user y password, por su **usuario** y **contraseña** que registró en Ghost.
-   ![image](https://user-images.githubusercontent.com/78829003/117494799-74f35480-af3a-11eb-8ba7-a1b0ba441405.png)
-
-**Primera estrategia: Editar titulo y descripción del sitio**
-
-Para ejecutar esta estrategia de pruebas, vaya de nuevo al archivo **automation-config.json** y cambie el valor de **testFiles** por **editar-configuracion-general-titulo-y-descripcion.js**. Debe quedar de la siguiente manera:
 
 ### Analice las pruebas end-to-end 🔩
 
@@ -243,16 +210,20 @@ _Autor_
 Muestra de los videos funcionando
 
 
-Vide de login 
+# Video de la funcionalidad Manage Login 
 
 
-https://user-images.githubusercontent.com/78820446/117484423-ab29d780-af2c-11eb-921c-409e39af3eee.mp4
 
 
-Video de pages 
+# Video de la funcionalidad Manage General Settings
 
 
 https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
+
+
+# Video de la funcionalidad Create Posts
+
+# Video de la funcionalidad Manage Tags
 
 
 
