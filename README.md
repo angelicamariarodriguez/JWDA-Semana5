@@ -22,6 +22,7 @@ Node,     Version 12.17.0
 Cypress,  Version 7.2.0
 Chrome,   Version  90.0.4430.93
 Git,      Version  2.21.0
+Ghost ,   Version  3.3.0
 ```
 
 ### Instalación 🔧
@@ -31,7 +32,7 @@ En este caso para ejecutar el proyecto debe haber instalado las herramientas ind
 Pasos
 
 ```
-Revisar que se encuentre configurado node de manera correcta Node, se realiza de la siguiente manera
+Revisar que se encuentre configurado node de manera correcta, se realiza de la siguiente manera
 ```
 
 * Abrir la terminal de su equipo, esta guia estara para un sistema operativo Windows, pero si configuro de manera exitosa las herramientas nombradas en  **Pre-requisitos** no deberia haber diferencia.
@@ -47,7 +48,7 @@ Revisar que se encuentre configurado node de manera correcta Node, se realiza de
 El siguiente paso 
 
 ```
-Revisar que se encuentre configurado node de manera correcta cypress, se realiza de la siguiente manera
+Revisar que se encuentre configurado cypress de manera correcta, se realiza de la siguiente manera
 ```
 
 * Abrir la terminal de su equipo, puede ser la misma que abrio en el paso anterior para verificar  la instalacion de node
@@ -75,6 +76,17 @@ Revisar que tenga instalado git en su maquina, se realiza de la siguiente manera
 ![git](https://user-images.githubusercontent.com/78820446/117470240-351d7480-af1c-11eb-9032-03f81b674975.PNG)
 
 
+El siguiente paso 
+
+
+```
+Revisar que tenga instalado Ghost 3.3.0 de manera correcta, ya registrado un usuario e ingresando de manera correcta
+```
+
+* Sobre la carpeta que tiene configurado Ghost 3.3.0 debe ejecutar el siguiente comando **Ghost start**, en caso de no salir de la siguiente manera tiene un error en la instalacion de Ghost 3.3.0 que debera revisar 
+
+![ghost start](https://user-images.githubusercontent.com/78820446/117476511-a102db80-af22-11eb-91c7-78b66cf5dc65.PNG)
+
 
 El siguiente paso 
 
@@ -98,7 +110,7 @@ El siguiente paso
 
 
 ```
-Dirigirse a  la carpeta clonada con la terminal
+Dirigirse a  la carpeta clonada con la terminal del paso anterior 
 ```
 
 * Sobre la carpeta creada en el paso anterior y el proyecto clonado, debe ejecutarse el siguiente comando **cd JWDA-Semana5**
@@ -107,17 +119,22 @@ Dirigirse a  la carpeta clonada con la terminal
 
 * Sobre la carpeta **JWDA-Semana5** ejecutar **npm install** no debe salir ningun error en el proceso de instalacion
 
+![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
+
 
 
 ## Ejecutando las pruebas ⚙️
 
-Para ejecutar 
+Para ejecutar unicamente debe  hacer lo siguiente 
 
 ```
-cypress open
+Ubicarse en la carpeta donde realizo la instalacion de las node modules
 ```
 
-_Seleccionar la carpeta correspondiente  y ejecutar   monkey_testing.spec.js _
+![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
+
+
+Posteriormente debe editar los siguentes archivos 
 
 
 
@@ -126,14 +143,6 @@ _Seleccionar la carpeta correspondiente  y ejecutar   monkey_testing.spec.js _
 _En este caso el proyecto ejecuta pruebas no funcionales sobre el sistema para encontrar errores o comportamientos inesperados_
 
 
-## Despliegue 📦
-
-_Los comandos para ejecutar son_
-
-```
-npm install -g cypress
-cypress open
-```
 
 ## Construido con 🛠️
 
@@ -147,6 +156,9 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 _Autor_
 
+* **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
+* **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
+* **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
 * **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
 
 ## Video ✒️
