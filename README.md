@@ -37,12 +37,13 @@ Revisar que se encuentre configurado node de manera correcta, se realiza de la s
 
 * Abrir la terminal de su equipo, esta guia estara para un sistema operativo Windows, pero si configuro de manera exitosa las herramientas nombradas en  **Pre-requisitos** no deberia haber diferencia.
 
-![Captura](https://user-images.githubusercontent.com/78820446/117469345-3d28e480-af1b-11eb-8735-0f52d706b95d.PNG)
+![Terminal](https://user-images.githubusercontent.com/78820446/117479939-8cc0dd80-af26-11eb-85a5-b3559aa18ac5.PNG)
+
 
 * Ejecutar el comando node -v en la terminal, si aparece la version  esto indicaria que se encuentre instalado de manera correcta, en caso contrario debera revisar la instalacion de node en su maquina 
 
+![Node ](https://user-images.githubusercontent.com/78820446/117480756-9eef4b80-af27-11eb-98bd-cb7756ef43ac.PNG)
 
-![Version de node](https://user-images.githubusercontent.com/78820446/117468734-993f3900-af1a-11eb-9a61-627eb569f4f3.PNG)
 
 
 El siguiente paso 
@@ -53,11 +54,12 @@ Revisar que se encuentre configurado cypress de manera correcta, se realiza de l
 
 * Abrir la terminal de su equipo, puede ser la misma que abrio en el paso anterior para verificar  la instalacion de node
 
-![Captura](https://user-images.githubusercontent.com/78820446/117469345-3d28e480-af1b-11eb-8735-0f52d706b95d.PNG)
+![Terminal](https://user-images.githubusercontent.com/78820446/117479939-8cc0dd80-af26-11eb-85a5-b3559aa18ac5.PNG)
 
 * Ahora ejecutar el siguiente comando **Cypress -v**, en caso que no aparesca las versiones en cada campo deberia revisar la instalacion del cypress
 
-![Cypress](https://user-images.githubusercontent.com/78820446/117469533-75c8be00-af1b-11eb-85c6-5ffa7e90efc4.PNG)
+![Cypress version](https://user-images.githubusercontent.com/78820446/117480168-dd383b00-af26-11eb-84f1-c3ef654e1a8a.PNG)
+
 
 
 
@@ -69,7 +71,7 @@ Revisar que tenga instalado git en su maquina, se realiza de la siguiente manera
 
 * Abrir la terminal de su equipo, puede ser la misma que abrio en el paso anterior para verificar  la instalacion de node
 
-![Captura](https://user-images.githubusercontent.com/78820446/117469345-3d28e480-af1b-11eb-8735-0f52d706b95d.PNG)
+![Terminal](https://user-images.githubusercontent.com/78820446/117479939-8cc0dd80-af26-11eb-85a5-b3559aa18ac5.PNG)
 
 * Ahora ejecutar el siguiente comando **git --version**, en caso que no aparesca la version debera revisar la instalacion de git
 
@@ -86,6 +88,10 @@ Revisar que tenga instalado Ghost 3.3.0 de manera correcta, ya registrado un usu
 * Sobre la carpeta que tiene configurado Ghost 3.3.0 debe ejecutar el siguiente comando **Ghost start**, en caso de no salir de la siguiente manera tiene un error en la instalacion de Ghost 3.3.0 que debera revisar 
 
 ![ghost start](https://user-images.githubusercontent.com/78820446/117476511-a102db80-af22-11eb-91c7-78b66cf5dc65.PNG)
+
+* En caso de ser la primera ves en Ghost 3.3.0 debera registrarse y evidenciar que ingresa a la pantalla del home de Ghost, en caso que no ingrese a la pantalla, tiene algo mal configurado que debera revisar.
+
+![Ghost](https://user-images.githubusercontent.com/78820446/117479495-060c0080-af26-11eb-9845-2cf9a2e9ed23.PNG)
 
 
 El siguiente paso 
@@ -136,7 +142,16 @@ Ubicarse en la carpeta donde realizo la instalacion de las node modules
 
 Posteriormente debe editar los siguentes archivos 
 
+```
+automatization-config.json
+login-pages.spec.js
+manage-pages.spec.js
+```
+El archivo automatization-config.json editar las siguientes variables 
 
+**"user_login":"prueba@gmail.com"**
+**"user_password":"123456789*"**
+**"baseUrl":"http://localhost:2368/ghost/#/signin"**
 
 ### Analice las pruebas end-to-end 🔩
 
