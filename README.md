@@ -2,9 +2,9 @@
 Repositorio del grupo conformado por: Angelica Rodriguez, Jorge Barrera, Wilson Gonzalez y Dario Herrera
 
 
-# Monkey
+# Cypress 
 
-Este contiene un proyecto base de cipress para la ejecucion de pruebas con monkey, se hacen pruebas sobre la siguiente url https://losestudiantes.com/uniandes
+Este proyecto contiene el codigo de las pruebas E2E del codigo  GHOST 3.3.0, la url  para las pruebas fue la siguiente http://localhost:2368/
 
 ## Comenzando 🚀
 
