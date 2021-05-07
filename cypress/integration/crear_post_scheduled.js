@@ -68,9 +68,8 @@ describe('Post E2E', () => {
         //cy.get('.gh-contentfilter-type',{timeout:5000}).click();
         //cy.get('ul li[data-option-index="2"]',{timeout:5000}).click();
            
-        cy.get('ol h3:first').should('have.text', `\n        ${postTitle}\n    `);
-  
-
+        cy.get('ol').find('h3').contains(postTitle)
+        .should('have.text', `\n        ${postTitle}\n    `);
 
     });
 

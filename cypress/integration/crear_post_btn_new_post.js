@@ -56,9 +56,8 @@ describe('Post E2E', () => {
         cy.get('.gh-canvas-title').should('have.text', 'Posts');
         cy.wait(delay);
 
-        cy.get('ol h3:first').should('have.text', `\n        ${postTitle}\n    `);
-        cy.wait(delay);
-
+        cy.get('ol').find('h3').contains(postTitle)
+        .should('have.text', `\n        ${postTitle}\n    `);
 
     })
     
