@@ -27,7 +27,7 @@ Ghost ,   Version  3.3.0
 
 ### Instalación 🔧
 
-En este caso para ejecutar el proyecto debe haber instalado las herramientas indicadas anteriormente en el paso de **Pre-requisitos**, una ves instaladas debe ejecutar lo siguiente 
+En este caso para ejecutar el proyecto debe haber instalado las herramientas indicadas anteriormente en el paso de **Pre-requisitos**, una vez instaladas debe ejecutar lo siguiente 
 
 Pasos
 
@@ -85,11 +85,11 @@ El siguiente paso
 Revisar que tenga instalado Ghost 3.3.0 de manera correcta, ya registrado un usuario e ingresando de manera correcta
 ```
 
-* Sobre la carpeta que tiene configurado Ghost 3.3.0 debe ejecutar el siguiente comando **Ghost start**, en caso de no salir de la siguiente manera tiene un error en la instalacion de Ghost 3.3.0 que debera revisar 
+* Sobre la carpeta que tiene configurado Ghost 3.3.0 debe ejecutar el siguiente comando **ghost start**, en caso de no salir de la siguiente manera tiene un error en la instalacion de Ghost 3.3.0 que debera revisar 
 
 ![ghost start](https://user-images.githubusercontent.com/78820446/117476511-a102db80-af22-11eb-91c7-78b66cf5dc65.PNG)
 
-* En caso de ser la primera ves en Ghost 3.3.0 debera registrarse y evidenciar que ingresa a la pantalla del home de Ghost, en caso que no ingrese a la pantalla, tiene algo mal configurado que debera revisar.
+* En caso de ser la primera vez en Ghost 3.3.0 debera registrarse y evidenciar que ingresa a la pantalla del home de Ghost, en caso que no ingrese a la pantalla, tiene algo mal configurado que debera revisar.
 
 ![Ghost](https://user-images.githubusercontent.com/78820446/117479495-060c0080-af26-11eb-9845-2cf9a2e9ed23.PNG)
 
@@ -127,7 +127,16 @@ Dirigirse a  la carpeta clonada con la terminal del paso anterior
 
 ![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
 
+## Funcionalidades y estrategias 🚗
 
+Este proyecto está probando las siguientes funcionalidades:
+
+1. Manage Pages:
+2. Manage General Settings:
+    - Editar titulo y descripción del sitio
+    - Editar la zona horaria
+    - Hacer privado el sitio
+    - Hacer público el sitio
 
 ## Ejecutando las pruebas ⚙️
 
@@ -143,7 +152,7 @@ Ubicarse en la carpeta donde realizo la instalacion de las node modules
 Posteriormente debe editar los siguentes archivos, estos archivos se encuentra dentro de la carpetas de **integration** y la carpeta principal
 
 ```
-automatization-config.json
+automation-config.json
 login-pages.spec.js
 manage-pages.spec.js
 ```
@@ -153,7 +162,7 @@ manage-pages.spec.js
 ![COnfig](https://user-images.githubusercontent.com/78820446/117482587-33f34400-af2a-11eb-84de-ec7098e9a372.PNG)
 
 
-El archivo automatization-config.json editar las siguientes variables 
+En el archivo automation-config.json editar las siguientes variables 
 
 **"user_login":"prueba@gmail.com"**
 **"user_password":"123456789*"**
