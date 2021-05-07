@@ -145,8 +145,9 @@ Este proyecto está probando las siguientes funcionalidades:
  4. Create Posts:
  5. Manage Tags:
 
-## Ejecutando las pruebas ⚙️
+# Ejecutando las pruebas ⚙️
 
+## 1. Manage Pages:
 Para ejecutar unicamente debe  hacer lo siguiente 
 
 ```
