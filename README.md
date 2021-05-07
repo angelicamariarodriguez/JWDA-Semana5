@@ -228,6 +228,9 @@ https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-
 # Vide de la funcionalidad Manage Pages
 
 
+https://user-images.githubusercontent.com/78746286/117516925-2a84ce80-af60-11eb-91f6-67d45da0d1a0.mp4
+
+
 
 # Video de la funcionalidad Create Posts
 
