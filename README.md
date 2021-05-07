@@ -140,22 +140,69 @@ Ubicarse en la carpeta donde realizo la instalacion de las node modules
 ![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
 
 
-Posteriormente debe editar los siguentes archivos 
+Posteriormente debe editar los siguentes archivos, estos archivos se encuentra dentro de la carpetas de **integration** y la carpeta principal
 
 ```
 automatization-config.json
 login-pages.spec.js
 manage-pages.spec.js
 ```
+
+![Rutas](https://user-images.githubusercontent.com/78820446/117482499-1920cf80-af2a-11eb-9c3c-f1a46d2622a5.PNG)
+
+![COnfig](https://user-images.githubusercontent.com/78820446/117482587-33f34400-af2a-11eb-84de-ec7098e9a372.PNG)
+
+
 El archivo automatization-config.json editar las siguientes variables 
 
 **"user_login":"prueba@gmail.com"**
 **"user_password":"123456789*"**
 **"baseUrl":"http://localhost:2368/ghost/#/signin"**
 
+Para los archivos **login-pages.spec.js** y **manage-pages.spec.js** unicamente debe modificar lo siguiente 
+
+El archivo **login-pages.spec.js**
+
+
+**const url = Cypress.config('baseUrl') || "http://localhost:2368/"** Colocar la dirrecion de host unicamente ip y puerto finalizando con  / 
+
+![Login url](https://user-images.githubusercontent.com/78820446/117482753-70bf3b00-af2a-11eb-937f-e4dc51b8c4bb.PNG)
+
+
+El archivo **manage-pages.spec.js** modificar lo siguiente 
+
+**const user_login = Cypress.env('user_login') || ""** Dentro del terneario, es decir las comillas poner el usuario para el proyecto.
+**const user_password = Cypress.env('user_password') || ""**  Dentro del terneario, es decir las comillas poner la clave del usuario para el proyecto.
+**const url = Cypress.config('baseUrl') || ""** Dentro del terneario, es decir las comillas poner la dirrecion de la pagina de Ghost unicamente puerto e ip finalizando con / . ejemplo http://localhost:8530/
+
+![pages](https://user-images.githubusercontent.com/78820446/117482939-b7ad3080-af2a-11eb-98bb-ee8d1a44ecac.PNG)
+
+Por ultimo ya habiendo configurado los archivos y cambiando los datos por su  maquina unicamente queda ejecutar el siguiente comando 
+
+```
+cypress run --headless
+
+```
+
+Este comando empezara a ejecutar los test, deberan salir exitosos   en la consola 
+
+![Exitoso](https://user-images.githubusercontent.com/78820446/117483939-0c9d7680-af2c-11eb-8d3c-148406024ffb.PNG)
+
+
 ### Analice las pruebas end-to-end 🔩
 
-_En este caso el proyecto ejecuta pruebas no funcionales sobre el sistema para encontrar errores o comportamientos inesperados_
+En este caso para el analizis de las pruebas ejecutadas unicamente debe evidenciar los resultados de la consola y videos.
+
+Vide de login 
+
+
+https://user-images.githubusercontent.com/78820446/117484423-ab29d780-af2c-11eb-921c-409e39af3eee.mp4
+
+
+Video de pages 
+
+
+https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
 
 
 
@@ -172,9 +219,9 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 _Autor_
 
 * **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
-* **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
-* **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
-* **Wilson Alejandro Gonzalez Gaitan** - *Trabajo Inicial* - [Alejito29](https://github.com/Alejito29)
+* **Dario Fernando Herrera Gonzalez** - *Trabajo Inicial* - [dherrera54](https://github.com/dherrera54)
+* **Angelica Maria Rodriguez Torres** - *Trabajo Inicial* - [angelicamariarodriguez](https://github.com/angelicamariarodriguez9)
+* **Jorge Barrera** - *Trabajo Inicial* - [](https://github.com/Alejito29)
 
 ## Video ✒️
 
