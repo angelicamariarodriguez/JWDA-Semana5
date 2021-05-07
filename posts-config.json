@@ -1,0 +1,28 @@
+{
+    "projectId":"ghost-E2E-with-cypress",
+    "baseUrl":"http://localhost:2368/ghost/#/signin",
+    "chromeWebSecurity": false,
+    "values": {"userInputID": "ember8",
+        "passwordInputID": "ember10",
+        "loginButtonID": "ember12",
+        "userName": "d.herrerag@uniandes.edu.co",
+        "password": "UQdn72A9vdxH64y"},
+    "env":{
+        "appName":"App prueba",
+        "events":50,
+        "delay":300,
+        "seed":1234,
+        "pctClicks":19,
+        "pctScroll":17,
+        "pctSelectors":16,
+        "pctKeys":16,
+        "pctSpKeys":16,
+        "pctPgNav":16
+    },
+    "integrationFolder": "./cypress/integration",
+    "pluginsFile": "./cypress/plugins/index.js",
+    "pageLoadTimeout":120000,
+    "defaultCommandTimeout":120000,
+    "testFiles": "posts.js",
+    "videosFolder":"./results"
+}
