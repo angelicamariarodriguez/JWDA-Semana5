@@ -41,7 +41,7 @@ describe('Manage pages', () => {
         managePages.searchTheTextExists('body', 'No pages match the current filter');
     })
 
-    it('Should filter the pages with the next items: published pages and author  ', () => {
+    it('Should filter the pages with the next items: published pages, author  and tag ', () => {
         managePages.fillOutInput(user_login, '[id^=ember8]');
         managePages.fillOutInput(user_password, '[id^=ember10]');
         managePages.CLickItem('[id^=ember12]', 0, true);
@@ -55,7 +55,7 @@ describe('Manage pages', () => {
         managePages.searchTheTextExists('body', 'No pages match the current filter');
     })
 
-    it('Should filter the pages with the next items: published pages,  author and Oldest  ', () => {
+    it('Should filter the pages with the next items: published pages,  author, tag and Oldest  ', () => {
         managePages.fillOutInput(user_login, '[id^=ember8]');
         managePages.fillOutInput(user_password, '[id^=ember10]');
         managePages.CLickItem('[id^=ember12]', 0, true);

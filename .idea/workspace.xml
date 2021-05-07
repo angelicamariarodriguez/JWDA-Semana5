@@ -31,7 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <updated>1620342760686</updated>
       <workItem from="1620342761925" duration="7725000" />
       <workItem from="1620352963639" duration="4814000" />
-      <workItem from="1620394755663" duration="1502000" />
+      <workItem from="1620394755663" duration="2142000" />
     </task>
     <servers />
   </component>
