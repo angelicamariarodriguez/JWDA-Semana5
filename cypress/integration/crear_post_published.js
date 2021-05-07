@@ -51,13 +51,13 @@ describe('Post E2E', () => {
         cy.get('.gh-editor-title',{timeout:5000}).type(postTitle);
         cy.get('.gh-editor-header',{timeout:5000}).contains("Posts");
         cy.get('.koenig-editor__editor',{timeout:5000}).click();
-        cy.go('back');
+        cy.contains('Posts').click({force:true});
         cy.contains(postTitle).click({force:true});
         cy.get('.gh-publishmenu',{timeout:5000}).click();
         cy.get('.gh-publishmenu-button',{timeout:5000}).click();
         cy.wait(delay);
 
-        cy.go('back');
+        cy.contains('Posts').click({force:true});
         cy.get('.gh-canvas-title',{timeout:5000}).should('have.text', 'Posts');
         cy.wait(delay);
 

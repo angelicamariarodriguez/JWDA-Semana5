@@ -52,7 +52,7 @@ describe('Post E2E', () => {
         cy.get('.gh-editor-header').contains("Posts");
         cy.get('.koenig-editor__editor').click();
        
-        cy.go('back');
+        cy.contains('Posts').click({force:true});
         cy.get('.gh-canvas-title').should('have.text', 'Posts');
         cy.wait(delay);
 
