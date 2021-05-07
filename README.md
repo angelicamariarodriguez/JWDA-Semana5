@@ -27,7 +27,7 @@ Ghost ,   Version  3.3.0
 
 ### Instalación 🔧
 
-En este caso para ejecutar el proyecto debe haber instalado las herramientas indicadas anteriormente en el paso de **Pre-requisitos**, una ves instaladas debe ejecutar lo siguiente 
+En este caso para ejecutar el proyecto debe haber instalado las herramientas indicadas anteriormente en el paso de **Pre-requisitos**, una vez instaladas debe ejecutar lo siguiente 
 
 Pasos
 
@@ -85,11 +85,11 @@ El siguiente paso
 Revisar que tenga instalado Ghost 3.3.0 de manera correcta, ya registrado un usuario e ingresando de manera correcta
 ```
 
-* Sobre la carpeta que tiene configurado Ghost 3.3.0 debe ejecutar el siguiente comando **Ghost start**, en caso de no salir de la siguiente manera tiene un error en la instalacion de Ghost 3.3.0 que debera revisar 
+* Sobre la carpeta que tiene configurado Ghost 3.3.0 debe ejecutar el siguiente comando **ghost start**, en caso de no salir de la siguiente manera tiene un error en la instalacion de Ghost 3.3.0 que debera revisar 
 
 ![ghost start](https://user-images.githubusercontent.com/78820446/117476511-a102db80-af22-11eb-91c7-78b66cf5dc65.PNG)
 
-* En caso de ser la primera ves en Ghost 3.3.0 debera registrarse y evidenciar que ingresa a la pantalla del home de Ghost, en caso que no ingrese a la pantalla, tiene algo mal configurado que debera revisar.
+* En caso de ser la primera vez en Ghost 3.3.0 debera registrarse y evidenciar que ingresa a la pantalla del home de Ghost, en caso que no ingrese a la pantalla, tiene algo mal configurado que debera revisar.
 
 ![Ghost](https://user-images.githubusercontent.com/78820446/117479495-060c0080-af26-11eb-9845-2cf9a2e9ed23.PNG)
 
@@ -127,57 +127,53 @@ Dirigirse a  la carpeta clonada con la terminal del paso anterior
 
 ![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
 
+## Funcionalidades y estrategias 🚗
 
+Este proyecto está probando las siguientes funcionalidades:
 
-## Ejecutando las pruebas ⚙️
+1. Manage Pages:
+2. Manage General Settings:
+    - Editar titulo y descripción del sitio
+    - Editar la zona horaria
+    - Hacer privado el sitio
+    - Hacer público el sitio
+3. Manage Login:
+    - Login con usuario y contraseña incorrectos
+    - Login con usuario y contraseña correctos
+    - Login con usuario correcto y contraseña incorrecta
+    - Login con usuario incorrecto y contraseña correcta
+ 4. Create Posts:
+ 5. Manage Tags:
 
-Para ejecutar unicamente debe  hacer lo siguiente 
+# Ejecutando las pruebas ⚙️
+
+Para ejecutar unicamente debe  hacer lo siguiente:
 
 ```
-Ubicarse en la carpeta donde realizo la instalacion de las node modules
+Ubicarse en la carpeta donde realizo la instalación de las node modules
 ```
 
 ![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
 
 
-Posteriormente debe editar los siguentes archivos, estos archivos se encuentra dentro de la carpetas de **integration** y la carpeta principal
+Posteriormente debe editar el siguente archivo, este archivo se encuentra dentro de la carpeta principal:
 
 ```
-automatization-config.json
-login-pages.spec.js
-manage-pages.spec.js
+automation-config.json
 ```
+En el archivo automation-config.json editar las siguientes variables: 
 
-![Rutas](https://user-images.githubusercontent.com/78820446/117482499-1920cf80-af2a-11eb-9c3c-f1a46d2622a5.PNG)
+1. Remplace los valore de **user** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
 
-![COnfig](https://user-images.githubusercontent.com/78820446/117482587-33f34400-af2a-11eb-84de-ec7098e9a372.PNG)
+     **"user": "arodriguezt9509@gmail.com",
+       **"password": "*********",
 
-
-El archivo automatization-config.json editar las siguientes variables 
-
-**"user_login":"prueba@gmail.com"**
-**"user_password":"123456789*"**
-**"baseUrl":"http://localhost:2368/ghost/#/signin"**
-
-Para los archivos **login-pages.spec.js** y **manage-pages.spec.js** unicamente debe modificar lo siguiente 
-
-El archivo **login-pages.spec.js**
+2. Asegurese que la url sea la siguiente: 
+    **"baseUrl":"http://localhost:2368/ghost/#/signin"**
 
 
-**const url = Cypress.config('baseUrl') || "http://localhost:2368/"** Colocar la dirrecion de host unicamente ip y puerto finalizando con  / 
 
-![Login url](https://user-images.githubusercontent.com/78820446/117482753-70bf3b00-af2a-11eb-937f-e4dc51b8c4bb.PNG)
-
-
-El archivo **manage-pages.spec.js** modificar lo siguiente 
-
-**const user_login = Cypress.env('user_login') || ""** Dentro del terneario, es decir las comillas poner el usuario para el proyecto.
-**const user_password = Cypress.env('user_password') || ""**  Dentro del terneario, es decir las comillas poner la clave del usuario para el proyecto.
-**const url = Cypress.config('baseUrl') || ""** Dentro del terneario, es decir las comillas poner la dirrecion de la pagina de Ghost unicamente puerto e ip finalizando con / . ejemplo http://localhost:8530/
-
-![pages](https://user-images.githubusercontent.com/78820446/117482939-b7ad3080-af2a-11eb-98bb-ee8d1a44ecac.PNG)
-
-Por ultimo ya habiendo configurado los archivos y cambiando los datos por su  maquina unicamente queda ejecutar el siguiente comando 
+Por ultimo ya habiendo configurado los archivos y cambiando los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
 
 ```
 cypress run --headless
@@ -185,8 +181,6 @@ cypress run --headless
 ```
 
 Este comando empezara a ejecutar los test, deberan salir exitosos   en la consola 
-
-![Exitoso](https://user-images.githubusercontent.com/78820446/117483939-0c9d7680-af2c-11eb-8d3c-148406024ffb.PNG)
 
 
 ### Analice las pruebas end-to-end 🔩
@@ -216,16 +210,24 @@ _Autor_
 Muestra de los videos funcionando
 
 
-Vide de login 
+# Video de la funcionalidad Manage Login 
 
 
-https://user-images.githubusercontent.com/78820446/117484423-ab29d780-af2c-11eb-921c-409e39af3eee.mp4
 
 
-Video de pages 
+# Video de la funcionalidad Manage General Settings
+
+https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-9f1f-b89172229c92.mp4
+
+# Vide de la funcionalidad Manage Pages
 
 
 https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
+
+
+# Video de la funcionalidad Create Posts
+
+# Video de la funcionalidad Manage Tags
 
 
 
