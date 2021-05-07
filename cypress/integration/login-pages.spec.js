@@ -30,5 +30,13 @@ describe('Login Pages', () => {
     loginPages.waitTime(delay);
 })
 
+it('Login with valid user and invalid password    ', () => {
+  loginPages.fillOutInput(user, '[id^=ember8]');
+  loginPages.fillOutInput(faker.random.alphaNumeric(), '[id^=ember10]');
+  loginPages.CLickItem('[id^=ember12]', 0);
+  loginPages.searchTheTextExists('body','Your password is incorrect.');
+  loginPages.waitTime(delay);
+})
+
   
 })
