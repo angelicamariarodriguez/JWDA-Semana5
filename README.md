@@ -173,7 +173,7 @@ En el archivo automation-config.json editar las siguientes variables:
 
 
 
-Por ultimo ya habiendo configurado los archivos y cambiando los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
+Por ultimo ya habiendo configurado los archivos y cambiado los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
 
 ```
 cypress run --headless
@@ -221,8 +221,6 @@ https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-
 
 # Vide de la funcionalidad Manage Pages
 
-
-https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
 
 
 # Video de la funcionalidad Create Posts

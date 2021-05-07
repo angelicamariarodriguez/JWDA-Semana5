@@ -6,12 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automation-config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/login-pages.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/login-pages.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/manage-general-settings.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/manage-general-settings.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/page-objects/login-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/login-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +111,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620420619584" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1620421900866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620421900866" />
     <state x="744" y="222" key="RollbackChangesDialog" timestamp="1620420099923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
