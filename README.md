@@ -143,10 +143,10 @@ Este proyecto está probando las siguientes funcionalidades:
     - Login con usuario correcto y contraseña incorrecta
     - Login con usuario incorrecto y contraseña correcta
  4. Create Posts:
-    - Creacion de post usando el boton "+" desde home
-    - Creacion de post usando el boton "New post" desde listado de posts
-    - Creacion de post con estado published usando el boton "New Post" desde lsitado de post
-    - Creacion de post con estado scheduled usando el boton "New Post" desde lsitado de post
+    - Creación de post usando el botón "+" desde home
+    - Creación de post usando el botón "New post" desde listado de posts
+    - Creación de post con estado published usando el botón "New Post" desde listado de post
+    - Creación de post con estado scheduled usando el botón "New Post" desde listado de post
  5. Manage Tags:
 
 # Ejecutando las pruebas ⚙️
