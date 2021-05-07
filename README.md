@@ -132,12 +132,16 @@ Dirigirse a  la carpeta clonada con la terminal del paso anterior
 Este proyecto está probando las siguientes funcionalidades:
 
 1. Manage Pages:
-2. Manage General Settings:
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por la opcion de concepto
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por concepto y autor ghost
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por concepto, autor y tag
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por concepto, autor,  tag y publicacion reciente
+3. Manage General Settings:
     - Iniciar sesión en Ghost ir a configuraciones generales y editar el título y la descripción del sitio.
     - Iniciar sesión en Ghost ir a configuraciones generales y editar la zona horaria del sitio.
     - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como privado.
     - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como público.
-3. Manage Login:
+4. Manage Login:
     - Login con usuario y contraseña incorrectos
     - Login con usuario y contraseña correctos
     - Login con usuario correcto y contraseña incorrecta
@@ -219,6 +223,9 @@ Muestra de los videos funcionando
 # Video de la funcionalidad Manage Login 
 
 
+https://user-images.githubusercontent.com/78820446/117517823-ef37cf00-af62-11eb-93b7-c67e00850680.mp4
+
+
 
 
 # Video de la funcionalidad Manage General Settings
@@ -228,7 +235,7 @@ https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-
 # Vide de la funcionalidad Manage Pages
 
 
-https://user-images.githubusercontent.com/78746286/117516925-2a84ce80-af60-11eb-91f6-67d45da0d1a0.mp4
+https://user-images.githubusercontent.com/78820446/117517836-f7900a00-af62-11eb-9524-9d9ecc34c33d.mp4
 
 
 
