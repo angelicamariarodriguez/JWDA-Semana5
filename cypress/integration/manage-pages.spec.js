@@ -64,7 +64,7 @@ describe('Manage pages', () => {
         managePages.CLickItem('[id^=ember30]', 0, true);
         managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay);
-        managePages.searchByContains('body', 'All tags');
+        managePages.searchByContains('body', 'Newest');
         managePages.navigate('ghost/#/pages?author=ghost&order=published_at asc&tag=getting-started&type=concept');
         managePages.waitTime(delay);
         managePages.searchTheTextExists('body', 'No pages match the current filter');
