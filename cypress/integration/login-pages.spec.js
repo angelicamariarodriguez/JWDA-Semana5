@@ -16,8 +16,7 @@ describe('Login Pages', () => {
       loginPages.fillOutInput(faker.internet.email(), '[id^=ember8]');
       loginPages.fillOutInput(faker.random.alphaNumeric(), '[id^=ember10]');
       loginPages.CLickItem('[id^=ember12]', 0);
-      managePages.searchTheTextExists('body', 'No pages match the current filter');
-      login.searchTheTextExists('body','Access denied.');
+      loginPages.searchTheTextExists('body','Access denied.');
       loginPages.waitTime(delay);
   })
 
