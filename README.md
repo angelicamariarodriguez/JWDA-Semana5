@@ -170,12 +170,14 @@ En el archivo costant-page.js en la carpeta page-objects editar las siguientes v
 1. Remplace los valore de **USER** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
 
     **static USER = 'arodriguezt9509@gmail.com';
-    **static PASSWORD = 'M4r114t0rr3s*';
+    **static PASSWORD = '********';
 
 2. Asegurese que la url sea la siguiente: 
     **static BASE_URL = 'http://localhost:2368/'**
 
 3. Asegurese de tener la vista del sitio como pública. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
+
+![image](https://user-images.githubusercontent.com/78829003/117516478-d75e4c00-af5e-11eb-8002-3ff61f2e25d6.png)
 
 Por ultimo ya habiendo configurado los archivos y cambiado los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
 
