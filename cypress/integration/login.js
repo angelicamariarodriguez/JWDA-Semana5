@@ -22,15 +22,15 @@ function clickButton(search, index ){
 describe('Login', () => {
   beforeEach(() => {
     cy.visit(url)
-	cy.wait(delay);
+	  cy.wait(delay);
   })
 
   it('Igresar con un usuario y clave invalido', () => {
       fillOutInput(faker.internet.email(), '[id^=ember8]');
-	  fillOutInput(faker.random.alphaNumeric(), '[id^=ember10]');
-	  clickButton('[id^=ember12]', 0);
-	  cy.contains('Access denied.');
-	  cy.wait(delay);
+      fillOutInput(faker.random.alphaNumeric(), '[id^=ember10]');
+      clickButton('[id^=ember12]', 0);
+      cy.contains('Access denied.');
+      cy.wait(delay);
   })
 
   
