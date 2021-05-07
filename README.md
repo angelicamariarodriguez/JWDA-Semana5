@@ -217,6 +217,10 @@ Muestra de los videos funcionando
 
 # Video de la funcionalidad Manage General Settings
 
+https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-9f1f-b89172229c92.mp4
+
+# Vide de la funcionalidad Manage Pages
+
 
 https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
 
