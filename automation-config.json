@@ -23,6 +23,6 @@
     "pluginsFile": "./cypress/plugins/index.js",
     "pageLoadTimeout":120000,
     "defaultCommandTimeout":120000,
-    "testFiles": "editar-configuracion-general-titulo-y-descripcion.js",
+    "testFiles": "manage-pages.spec.js",
     "videosFolder":"./results"
 }

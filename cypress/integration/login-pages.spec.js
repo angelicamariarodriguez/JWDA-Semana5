@@ -1,6 +1,6 @@
 import {LoginPages} from "../page-objects/login-pages";
-const url = Cypress.config('baseUrl') || "http://localhost:2368/"
-const delay = Cypress.env('delay') || 300
+const url = Cypress.config('baseUrl') 
+const delay = Cypress.env('delay') 
 const faker = require('faker');
 
 describe('Login Pages', () => {
@@ -8,7 +8,7 @@ describe('Login Pages', () => {
   const loginPages = new LoginPages();
   
   beforeEach(() => {
-      loginPages.navigate(url+'ghost/#/signin');
+      loginPages.navigate(url);
       loginPages.waitTime(delay);
   })
 
