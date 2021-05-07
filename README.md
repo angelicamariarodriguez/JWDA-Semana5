@@ -193,18 +193,6 @@ Este comando empezara a ejecutar los test, deberan salir exitosos   en la consol
 
 En este caso para el analizis de las pruebas ejecutadas unicamente debe evidenciar los resultados de la consola y videos.
 
-Vide de login 
-
-
-https://user-images.githubusercontent.com/78820446/117484423-ab29d780-af2c-11eb-921c-409e39af3eee.mp4
-
-
-Video de pages 
-
-
-https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
-
-
 
 ## Construido con 🛠️
 
@@ -225,10 +213,20 @@ _Autor_
 
 ## Video ✒️
 
-Muestra un pequeño video del funcionamiento
+Muestra de los videos funcionando
 
 
-https://user-images.githubusercontent.com/78820446/116794990-26a40880-aa97-11eb-834d-3f34878e0903.mp4
+Vide de login 
+
+
+https://user-images.githubusercontent.com/78820446/117484423-ab29d780-af2c-11eb-921c-409e39af3eee.mp4
+
+
+Video de pages 
+
+
+https://user-images.githubusercontent.com/78820446/117484451-b41aa900-af2c-11eb-9c92-08addb36166c.mp4
+
 
 
 
