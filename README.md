@@ -207,9 +207,14 @@ Este comando empezara a ejecutar los test, deberan salir exitosos   en la consol
 
 ## 2. Manage General Settings:
 
-Antes de ejecutar los escenarios de esta funcionalidad debe hacer las siguientes modificaciones:
+**Antes** de ejecutar los escenarios de esta funcionalidad debe hacer las siguientes modificaciones:
 
-    1. Vaya al archivo automation-config.json y remplace los valore de de user y password, por su usuario y contraseña que registró en Ghost.
+1. Vaya al archivo **automation-config.json** y remplace los valore de de user y password, por su **usuario** y **contraseña** que registró en Ghost.
+   ![image](https://user-images.githubusercontent.com/78829003/117494799-74f35480-af3a-11eb-8ba7-a1b0ba441405.png)
+
+**Primera estrategia: Editar titulo y descripción del sitio**
+
+Para ejecutar esta estrategia de pruebas, vaya de nuevo al archivo **automation-config.json** y cambie el valor de **testFiles** por **editar-configuracion-general-titulo-y-descripcion.js**. Debe quedar de la siguiente manera:
 
 ### Analice las pruebas end-to-end 🔩
 
