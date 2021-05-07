@@ -1,20 +1,22 @@
 /// <reference types="cypress"/>
 
 import {PostCreationPage} from '../page-objects/post-creation-page'
+import {Constant_PAGES} from "../page-objects/constant-page";
 
-const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/signin"
-const delay = Cypress.env('delay') || 100
+const url = Constant_PAGES.BASE_URL+'ghost/#/signin';
+const delay = Constant_PAGES.DELAY
+
 const faker = require('faker');
-const config = require('../../posts-config.json')
-let userInputID = config.values.userInputID;
-let passwordInputID = config.values.passwordInputID;
-let loginButtonID =  config.values.loginButtonID;
-let userNameLogin = config .values.userName;
-let passwordLogin = config.values.password; 
+
+const userInputID = "ember8";
+const passwordInputID = "ember10";
+const loginButtonID =  "ember12";
+const userNameLogin = Constant_PAGES.USER
+const passwordLogin = Constant_PAGES.PASSWORD
 
 
 let postCreation = new PostCreationPage;
-describe('Post creation E2E Tests', () => {
+describe('Post creation', () => {
     
     beforeEach(() => {
       postCreation.navigate(url);
