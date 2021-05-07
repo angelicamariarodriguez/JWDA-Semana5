@@ -133,10 +133,10 @@ Este proyecto está probando las siguientes funcionalidades:
 
 1. Manage Pages:
 2. Manage General Settings:
-    - Editar titulo y descripción del sitio
-    - Editar la zona horaria
-    - Hacer privado el sitio
-    - Hacer público el sitio
+    - Iniciar sesión en Ghost ir a configuraciones generales y editar el título y la descripción del sitio.
+    - Iniciar sesión en Ghost ir a configuraciones generales y editar la zona horaria del sitio.
+    - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como privado.
+    - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como público.
 3. Manage Login:
     - Login con usuario y contraseña incorrectos
     - Login con usuario y contraseña correctos
@@ -167,15 +167,15 @@ costant-page.js
 ```
 En el archivo costant-page.js en la carpeta page-objects editar las siguientes variables: 
 
-1. Remplace los valore de **user** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
+1. Remplace los valore de **USER** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
 
-     **"user": "arodriguezt9509@gmail.com",
-       **"password": "*********",
+    **static USER = 'arodriguezt9509@gmail.com';
+    **static PASSWORD = 'M4r114t0rr3s*';
 
 2. Asegurese que la url sea la siguiente: 
-    **"baseUrl":"http://localhost:2368/"**
+    **static BASE_URL = 'http://localhost:2368/'**
 
-
+3. Asegurese de tener la vista del sitio como pública. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
 
 Por ultimo ya habiendo configurado los archivos y cambiado los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
 
