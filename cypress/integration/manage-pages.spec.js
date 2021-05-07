@@ -1,17 +1,16 @@
 import {ManagePages} from "../page-objects/manage-pages";
-const url = Cypress.config('baseUrl') 
-const delay = Cypress.env('delay') || 300
-const user_login = Cypress.env('user_login') 
-const user_password = Cypress.env('user_password') 
+import {Constant_PAGES} from "../page-objects/constant-page";
+const url = Constant_PAGES.BASE_URL
+const delay = Constant_PAGES.DELAY
+const user = Constant_PAGES.USER
+const password = Constant_PAGES.PASSWORD
 
 describe('Manage pages', () => {
 
   const managePages = new ManagePages();
-  const user = Cypress.env('user')
-  const password = Cypress.env('password')
   
   beforeEach(() => {
-      managePages.navigate(url);
+      managePages.navigate(url + 'ghost/#/signin' );
       managePages.waitTime(delay);
   })
 
@@ -21,9 +20,9 @@ describe('Manage pages', () => {
       managePages.CLickItem('[id^=ember12]', 0, true);
       managePages.waitTime(delay);
       managePages.CLickItem('[id^=ember30]', 0, true);
-      managePages.CLickItem('[id^=ember72]', 0, true);
+      managePages.searchByContains('body', 'Pages');
       managePages.waitTime(delay);
-      managePages.CLickItem('[id^=ember72]', 0, false);
+      managePages.searchByContains('body', 'All pages');
       managePages.navigate('ghost/#/pages?type=scheduled');
       managePages.waitTime(delay);
       managePages.searchTheTextExists('body', 'No pages match the current filter');
@@ -35,9 +34,9 @@ describe('Manage pages', () => {
         managePages.CLickItem('[id^=ember12]', 0, true);
         managePages.waitTime(delay);
         managePages.CLickItem('[id^=ember30]', 0, true);
-        managePages.CLickItem('[id^=ember72]', 0, true);
+        managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay);
-        managePages.CLickItem('[id^=ember72]', 0, false);
+        managePages.searchByContains('body', 'All authors');
         managePages.navigate('ghost/#/pages?author=ghost&type=published');
         managePages.waitTime(delay);
         managePages.searchTheTextExists('body', 'No pages match the current filter');
@@ -49,10 +48,10 @@ describe('Manage pages', () => {
         managePages.CLickItem('[id^=ember12]', 0, true);
         managePages.waitTime(delay);
         managePages.CLickItem('[id^=ember30]', 0, true);
-        managePages.CLickItem('[id^=ember72]', 0, true);
+        managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay);
-        managePages.CLickItem('[id^=ember72]', 0, false);
-        managePages.navigate('ghost/#/pages?author=ghost&tag=getting-started&type=published');
+        managePages.searchByContains('body', 'All tags');
+        managePages.navigate('ghost/#/pages?author=ghost&tag=getting-started&type=concept');
         managePages.waitTime(delay);
         managePages.searchTheTextExists('body', 'No pages match the current filter');
     })
@@ -63,10 +62,10 @@ describe('Manage pages', () => {
         managePages.CLickItem('[id^=ember12]', 0, true);
         managePages.waitTime(delay);
         managePages.CLickItem('[id^=ember30]', 0, true);
-        managePages.CLickItem('[id^=ember72]', 0, true);
+        managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay);
-        managePages.CLickItem('[id^=ember72]', 0, false);
-        managePages.navigate('ghost/#/pages?author=ghost&order=published_at asc&tag=getting-started&type=scheduled');
+        managePages.searchByContains('body', 'All tags');
+        managePages.navigate('ghost/#/pages?author=ghost&order=published_at asc&tag=getting-started&type=concept');
         managePages.waitTime(delay);
         managePages.searchTheTextExists('body', 'No pages match the current filter');
     })

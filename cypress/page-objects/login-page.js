@@ -1,11 +1,13 @@
-const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/signin"
-const delay = Cypress.env('delay') || 100
+
 
 export class LoginPage {
 
 
-    navigate(){
+    navigate(url){
         cy.visit(url)
+    }
+
+    waitTime(delay){
         cy.wait(delay);
     }
 

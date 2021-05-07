@@ -1,6 +1,7 @@
 import {LoginPages} from "../page-objects/login-pages";
-const url = Cypress.config('baseUrl') 
-const delay = Cypress.env('delay') 
+import {Constant_PAGES} from "../page-objects/constant-page";
+const url = Constant_PAGES.BASE_URL
+const delay = Constant_PAGES.DELAY
 const faker = require('faker');
 
 describe('Login Pages', () => {
@@ -8,7 +9,7 @@ describe('Login Pages', () => {
   const loginPages = new LoginPages();
   
   beforeEach(() => {
-      loginPages.navigate(url);
+      loginPages.navigate(url + 'ghost/#/signin');
       loginPages.waitTime(delay);
   })
 
