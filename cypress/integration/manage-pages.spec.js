@@ -23,7 +23,7 @@ describe('Manage pages', () => {
       managePages.searchByContains('body', 'Pages');
       managePages.waitTime(delay);
       managePages.searchByContains('body', 'All pages');
-      managePages.navigate('ghost/#/pages?type=scheduled');
+      managePages.navigate('ghost/#/pages?type=concept');
       managePages.waitTime(delay);
       managePages.searchTheTextExists('body', 'No pages match the current filter');
   })
@@ -37,7 +37,7 @@ describe('Manage pages', () => {
         managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay);
         managePages.searchByContains('body', 'All authors');
-        managePages.navigate('ghost/#/pages?author=ghost&type=published');
+        managePages.navigate('ghost/#/pages?author=ghost&type=concept');
         managePages.waitTime(delay);
         managePages.searchTheTextExists('body', 'No pages match the current filter');
     })
