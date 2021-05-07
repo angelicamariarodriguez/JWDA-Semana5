@@ -53,8 +53,10 @@ describe('Post E2E', () => {
         cy.get('.koenig-editor__editor',{timeout:5000}).click();
         cy.contains('Posts').click({force:true});
         cy.contains(postTitle).click({force:true});
+
         cy.get('.gh-publishmenu',{timeout:5000}).click();
         cy.get('.gh-publishmenu-button',{timeout:5000}).click();
+        
         cy.wait(delay);
 
         cy.contains('Posts').click({force:true});

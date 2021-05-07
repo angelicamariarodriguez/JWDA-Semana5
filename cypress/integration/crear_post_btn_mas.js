@@ -4,7 +4,6 @@ const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/signin"
 const delay = Cypress.env('delay') || 100
 const faker = require('faker');
 const config = require('../../posts-config.json')
-let loginURL = config.loginURL;
 let userInputID = config.values.userInputID;
 let passwordInputID = config.values.passwordInputID;
 let loginButtonID =  config.values.loginButtonID;
@@ -50,7 +49,6 @@ describe('Post E2E', () => {
         cy.get('.koenig-editor__editor').click();
         cy.contains('Posts').click({force:true});
         cy.wait(delay);
-        cy.contains('Posts').click({force:true});
         cy.get('.gh-canvas-title').should('have.text', 'Posts');
         cy.wait(delay);
 
