@@ -205,6 +205,11 @@ Este comando empezara a ejecutar los test, deberan salir exitosos   en la consol
 
 ![Exitoso](https://user-images.githubusercontent.com/78820446/117483939-0c9d7680-af2c-11eb-8d3c-148406024ffb.PNG)
 
+## 2. Manage General Settings:
+
+Antes de ejecutar los escenarios de esta funcionalidad debe hacer las siguientes modificaciones:
+
+    1. Vaya al archivo automation-config.json y remplace los valore de de user y password, por su usuario y contraseña que registró en Ghost.
 
 ### Analice las pruebas end-to-end 🔩
 
