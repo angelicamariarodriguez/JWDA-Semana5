@@ -137,6 +137,13 @@ Este proyecto está probando las siguientes funcionalidades:
     - Editar la zona horaria
     - Hacer privado el sitio
     - Hacer público el sitio
+3. Manage Login:
+    - Login con usuario y contraseña incorrectos
+    - Login con usuario y contraseña correctos
+    - Login con usuario correcto y contraseña incorrecta
+    - Login con usuario incorrecto y contraseña correcta
+ 4. Create Posts:
+ 5. Manage Tags:
 
 ## Ejecutando las pruebas ⚙️
 
