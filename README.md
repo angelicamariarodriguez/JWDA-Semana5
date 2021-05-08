@@ -234,7 +234,7 @@ https://user-images.githubusercontent.com/78820446/117517823-ef37cf00-af62-11eb-
 
 # Video de la funcionalidad Manage General Settings
 
-
+https://user-images.githubusercontent.com/78829003/117552772-0e8e3500-b013-11eb-996f-5185e0d1cb87.mp4
 
 # Vide de la funcionalidad Manage Pages
 
