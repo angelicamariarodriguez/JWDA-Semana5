@@ -8,6 +8,8 @@ const user = Constant_PAGES.USER
 const password = Constant_PAGES.PASSWORD
 const title = Constant_PAGES.NEW_TITLE
 const description = Constant_PAGES.NEW_DESCRIPTION
+const titleMeta = Constant_PAGES.NEW_META_TITLE
+const descriptionMeta = Constant_PAGES.NEW_META_DESCRIPTION
 
 describe('Manage General Settings', () => {
 
@@ -48,9 +50,9 @@ describe('Manage General Settings', () => {
         loginPage.clickOnSignIn()
         loginPage.verificarLogin()
         sitePage.irAConfiguracionGeneral()
-        cy.wait(delay);
+        loginPage.waitTime(delay);
         generalSettingsPage.clickOnExpanForTimeZone()
-        cy.wait(delay);
+        loginPage.waitTime(delay);
         generalSettingsPage.selectTimeZone()
         generalSettingsPage.saveChanges()
         generalSettingsPage.verifyTimeZoneSelected()
@@ -58,34 +60,35 @@ describe('Manage General Settings', () => {
         
     })
 
-    it('Poner sitio como privado - Configuracion General', () => {
+    it('Editar Meta titulo y Meta descripcion en Configuracion General', () => {
         loginPage.enterUser(user)
         loginPage.enterPassword(password)
         loginPage.clickOnSignIn()
         loginPage.verificarLogin()
         sitePage.irAConfiguracionGeneral()
-        cy.wait(delay)
-        generalSettingsPage.makePrivate()
+        loginPage.waitTime(1000);
+        generalSettingsPage.clickOnExpanForMetaSettings()
+        loginPage.waitTime(delay);
+        generalSettingsPage.editMetaTitle(titleMeta)
+        loginPage.waitTime(delay);
+        generalSettingsPage.verifyTitle(titleMeta)
+        loginPage.waitTime(delay);
+        generalSettingsPage.editMetaDescription(descriptionMeta)
+        loginPage.waitTime(delay);
         generalSettingsPage.saveChanges()
-        generalSettingsPage.verifyPrivate()
-        
+       
     })
 
-    it('Poner sitio como publico - Configuracion General', () => {
+    it('Cambiar privacidad del sitio - Configuracion General', () => {
         loginPage.enterUser(user)
         loginPage.enterPassword(password)
         loginPage.clickOnSignIn()
         loginPage.verificarLogin()
         sitePage.irAConfiguracionGeneral()
-        cy.wait(delay)
-        generalSettingsPage.makeNoPrivate()
-        generalSettingsPage.saveChanges()
-        generalSettingsPage.verifyNotPrivate()
+        loginPage.waitTime(delay);
+        generalSettingsPage.changePrivacy()
+        generalSettingsPage.saveChanges()        
         
     })
-
-
-
-
 
 })
