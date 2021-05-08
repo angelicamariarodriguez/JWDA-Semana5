@@ -24,11 +24,14 @@ export class GeneralSettingsPage{
        
     }
 
-    clickOnExpanForMetaSettings(){
+    clickOnExpanForLanguage(){
 
-        cy.xpath('(//button[@class="gh-btn"])[5]').click({force:true})
-
-
+        cy.get('[class^=gh-btn]').then($button => {
+            var expand = $button.get(3);
+            if(!Cypress.dom.isHidden(expand)) {
+               cy.wrap(expand).click({force: true});	
+            } 
+        });
        
     }
 
@@ -82,39 +85,36 @@ export class GeneralSettingsPage{
 
     }
 
-    selectTimeZone(){
-        cy.get('select').select('Pacific/Honolulu',{ force: true }) 
+    verifyLanguage(newLanguage){
+
+        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').should('have.value', newLanguage)	
+
     }
 
-    verifyTimeZoneSelected(){
-        cy.get('select').should('have.value','Pacific/Honolulu')
+    selectTimeZone(timeZone){
+        cy.get('select').select(timeZone,{ force: true }) 
     }
 
-    editMetaTitle(newMetaTitle){
-
-        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])').clear({force:true})
-        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])').type(newMetaTitle,{force:true})
-
+    verifyTimeZoneSelected(timeZone){
+        cy.get('select').should('have.value',timeZone)
     }
 
     
-    editMetaDescription(newMetaDescription){
-
-        cy.xpath('//textarea[@class="ember-text-area gh-input ember-view"]').clear({force:true})
-        cy.xpath('//textarea[@class="ember-text-area gh-input ember-view"]').type(newMetaDescription,{force:true})
-
-    }
-
-    verifyMetaTitle(newMetaTitle){
-        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])').should('have.value', newMetaTitle)
-
-    }
-
 
     changePrivacy(){
 
         cy.xpath('(//label[@class="switch"])').click({force:true})
     }
+    
+    editLanguage(newLanguage){
 
+        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').clear({force:true})
+        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').type(newLanguage, {force:true});	
+    }
+
+    verifyPrivate(){
+ 
+        cy.contains('A private RSS feed is available at')
+    }
 
 }

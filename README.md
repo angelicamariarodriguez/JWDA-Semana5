@@ -140,7 +140,7 @@ Este proyecto está probando las siguientes funcionalidades:
     - Iniciar sesión en Ghost ir a configuraciones generales y editar el título y la descripción del sitio.
     - Iniciar sesión en Ghost ir a configuraciones generales y editar la zona horaria del sitio.
     - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como privado.
-    - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como público.
+    - Iniciar sesión en Ghost ir a configuraciones generales y editar el campo de lenguage del sitio.
 4. Manage Login:
     - Login con usuario y contraseña incorrectos
     - Login con usuario y contraseña correctos
@@ -152,6 +152,10 @@ Este proyecto está probando las siguientes funcionalidades:
     - Creación de post con estado published usando el botón "New Post" desde listado de post
     - Creación de post con estado scheduled usando el botón "New Post" desde listado de post
  5. Manage Tags:
+    - Iniciar sesión en Ghost ir a tags, crear un nuevo tag con nombre y descripción
+    - Iniciar sesión en Ghost ir a tags, editar el nombre de un tag existente
+    - Iniciar sesión en Ghost ir a tags, agregar metadata y descripción de metadata a un tag existente
+    - Iniciar sesión en Ghost ir a tags, eliminar un tag existente
 
 # Ejecutando las pruebas ⚙️
 
@@ -230,7 +234,7 @@ https://user-images.githubusercontent.com/78820446/117517823-ef37cf00-af62-11eb-
 
 # Video de la funcionalidad Manage General Settings
 
-https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-9f1f-b89172229c92.mp4
+https://user-images.githubusercontent.com/78829003/117552772-0e8e3500-b013-11eb-996f-5185e0d1cb87.mp4
 
 # Vide de la funcionalidad Manage Pages
 
@@ -247,7 +251,7 @@ https://user-images.githubusercontent.com/78746286/117514980-c1e72300-af5a-11eb-
 
 # Video de la funcionalidad Manage Tags
 
-
+https://user-images.githubusercontent.com/78655008/117552025-a178a080-b00e-11eb-8630-4ee0fdc33056.mp4
 
 
 ## Licencia 📄
