@@ -140,7 +140,7 @@ Este proyecto está probando las siguientes funcionalidades:
     - Iniciar sesión en Ghost ir a configuraciones generales y editar el título y la descripción del sitio.
     - Iniciar sesión en Ghost ir a configuraciones generales y editar la zona horaria del sitio.
     - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como privado.
-    - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como público.
+    - Iniciar sesión en Ghost ir a configuraciones generales y editar el campo de lenguage del sitio.
 4. Manage Login:
     - Login con usuario y contraseña incorrectos
     - Login con usuario y contraseña correctos
@@ -234,7 +234,7 @@ https://user-images.githubusercontent.com/78820446/117517823-ef37cf00-af62-11eb-
 
 # Video de la funcionalidad Manage General Settings
 
-https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-9f1f-b89172229c92.mp4
+
 
 # Vide de la funcionalidad Manage Pages
 
