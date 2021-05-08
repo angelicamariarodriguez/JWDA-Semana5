@@ -12,6 +12,16 @@ export class TagsPage{
         item.type(text, {force: true})
     }
 
+    editText(search, newText, index){
+        cy.get(search).then($field => {
+            var title = $field.get(index);
+            if(!Cypress.dom.isHidden(title)) {
+                cy.wrap(title).clear({force:true});
+                cy.wrap(title).type(newText, {force:true});	
+             } 
+        })
+    }
+
     clickButton(search, index, flag ){
         cy.get(search).then($button => {
             const buttonLink = $button.get(index);
@@ -25,17 +35,21 @@ export class TagsPage{
         cy.get(search).contains(text).click()
     }
 
+    saveChanges(){
+        cy.get('.gh-canvas-title').contains("Tags").click();
+        //cy.get('.koenig-editor__editor').click(); 
+    }
+
     goToTagPage(){
-        cy.get('a.ember-view').contains('Tags').click()
+        cy.contains('Tags').click({force:true});
     }
 
     goToContent(text){
         cy.get('a.ember-view').contains(text).click()
     }
 
-    verifyByContains(search, text){
-        cy.get(search).contains(text)
-    }
+
+}
 /*
 
     addName(tagname){
@@ -170,4 +184,3 @@ export class TagsPage{
         cy.contains('Enable protection with simple shared password. All search engine optimization and social features will be disabled.')
     } 
     */
-}
