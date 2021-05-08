@@ -19,12 +19,18 @@
   },
   "homepage": "https://github.com/TheSoftwareDesignLab/monkey-cypress#readme",
   "devDependencies": {
-    "cypress-iframe": "^1.0.1",
     "cypress-log-to-output": "^1.0.8",
-    "cypress-plugin-tab": "^1.0.5"
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-xpath": "^1.6.2"
   },
   "dependencies": {
     "cypress": "^4.2.0",
     "faker": "^4.1.0"
+  },
+  "compilerOptions": {
+    "types": [
+      "cypress",
+      "cypress-xpath"
+    ]
   }
 }
