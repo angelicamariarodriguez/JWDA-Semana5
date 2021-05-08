@@ -132,17 +132,25 @@ Dirigirse a  la carpeta clonada con la terminal del paso anterior
 Este proyecto está probando las siguientes funcionalidades:
 
 1. Manage Pages:
-2. Manage General Settings:
-    - Editar titulo y descripción del sitio
-    - Editar la zona horaria
-    - Hacer privado el sitio
-    - Hacer público el sitio
-3. Manage Login:
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por la opcion de concepto
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por concepto y autor ghost
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por concepto, autor y tag
+    - Iniciar sesión en Ghost ir a post, filtar unicamente por concepto, autor,  tag y publicacion reciente
+3. Manage General Settings:
+    - Iniciar sesión en Ghost ir a configuraciones generales y editar el título y la descripción del sitio.
+    - Iniciar sesión en Ghost ir a configuraciones generales y editar la zona horaria del sitio.
+    - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como privado.
+    - Iniciar sesión en Ghost ir a configuraciones generales y poner el sitio como público.
+4. Manage Login:
     - Login con usuario y contraseña incorrectos
     - Login con usuario y contraseña correctos
     - Login con usuario correcto y contraseña incorrecta
     - Login con usuario incorrecto y contraseña correcta
  4. Create Posts:
+    - Creación de post usando el botón "+" desde home
+    - Creación de post usando el botón "New post" desde listado de posts
+    - Creación de post con estado published usando el botón "New Post" desde listado de post
+    - Creación de post con estado scheduled usando el botón "New Post" desde listado de post
  5. Manage Tags:
 
 # Ejecutando las pruebas ⚙️
@@ -159,19 +167,21 @@ Ubicarse en la carpeta donde realizo la instalación de las node modules
 Posteriormente debe editar el siguente archivo, este archivo se encuentra dentro de la carpeta principal:
 
 ```
-automation-config.json
+costant-page.js
 ```
-En el archivo automation-config.json editar las siguientes variables: 
+En el archivo costant-page.js en la carpeta page-objects editar las siguientes variables: 
 
-1. Remplace los valore de **user** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
+1. Remplace los valore de **USER** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
 
-     **"user": "arodriguezt9509@gmail.com",
-       **"password": "*********",
+    **static USER = 'arodriguezt9509@gmail.com';
+    **static PASSWORD = '********';
 
 2. Asegurese que la url sea la siguiente: 
-    **"baseUrl":"http://localhost:2368/ghost/#/signin"**
+    **static BASE_URL = 'http://localhost:2368/'**
 
+3. Asegurese de tener la vista del sitio como pública. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
 
+![image](https://user-images.githubusercontent.com/78829003/117516478-d75e4c00-af5e-11eb-8002-3ff61f2e25d6.png)
 
 Por ultimo ya habiendo configurado los archivos y cambiado los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
 
@@ -213,6 +223,9 @@ Muestra de los videos funcionando
 # Video de la funcionalidad Manage Login 
 
 
+https://user-images.githubusercontent.com/78820446/117517823-ef37cf00-af62-11eb-93b7-c67e00850680.mp4
+
+
 
 
 # Video de la funcionalidad Manage General Settings
@@ -222,8 +235,15 @@ https://user-images.githubusercontent.com/78829003/117502637-68282e00-af45-11eb-
 # Vide de la funcionalidad Manage Pages
 
 
+https://user-images.githubusercontent.com/78820446/117517836-f7900a00-af62-11eb-9524-9d9ecc34c33d.mp4
+
+
 
 # Video de la funcionalidad Create Posts
+
+
+https://user-images.githubusercontent.com/78746286/117514980-c1e72300-af5a-11eb-91f8-559ae5ecd82a.mp4
+
 
 # Video de la funcionalidad Manage Tags
 
