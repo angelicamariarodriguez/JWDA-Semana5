@@ -38,5 +38,13 @@ it('Login with valid user and invalid password    ', () => {
   loginPages.waitTime(delay);
 })
 
+it('Login with invalid user and valid password    ', () => {
+  loginPages.fillOutInput(faker.internet.email(), '[id^=ember8]');
+  loginPages.fillOutInput(password, '[id^=ember10]');
+  loginPages.CLickItem('[id^=ember12]', 0);
+  loginPages.searchTheTextExists('body','Access denied.');
+  loginPages.waitTime(delay);
+})
+
   
 })
