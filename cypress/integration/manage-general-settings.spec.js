@@ -2,14 +2,16 @@ import { GeneralSettingsPage } from '../page-objects/general-settings-page';
 import { LoginPage } from '../page-objects/login-page'
 import { SitePage } from '../page-objects/site-page'
 import {Constant_PAGES} from "../page-objects/constant-page";
+import { time } from 'faker';
 const url = Constant_PAGES.BASE_URL
 const delay = Constant_PAGES.DELAY
 const user = Constant_PAGES.USER
 const password = Constant_PAGES.PASSWORD
 const title = Constant_PAGES.NEW_TITLE
 const description = Constant_PAGES.NEW_DESCRIPTION
-const titleMeta = Constant_PAGES.NEW_META_TITLE
-const descriptionMeta = Constant_PAGES.NEW_META_DESCRIPTION
+const language = Constant_PAGES.NEW_LANGUAJE
+const timeZone = Constant_PAGES.TIME_ZONE
+
 
 describe('Manage General Settings', () => {
 
@@ -53,31 +55,13 @@ describe('Manage General Settings', () => {
         loginPage.waitTime(delay);
         generalSettingsPage.clickOnExpanForTimeZone()
         loginPage.waitTime(delay);
-        generalSettingsPage.selectTimeZone()
+        generalSettingsPage.selectTimeZone(timeZone)
         generalSettingsPage.saveChanges()
-        generalSettingsPage.verifyTimeZoneSelected()
+        generalSettingsPage.verifyTimeZoneSelected(timeZone)
 
         
     })
 
-    it('Editar Meta titulo y Meta descripcion en Configuracion General', () => {
-        loginPage.enterUser(user)
-        loginPage.enterPassword(password)
-        loginPage.clickOnSignIn()
-        loginPage.verificarLogin()
-        sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(1000);
-        generalSettingsPage.clickOnExpanForMetaSettings()
-        loginPage.waitTime(delay);
-        generalSettingsPage.editMetaTitle(titleMeta)
-        loginPage.waitTime(delay);
-        generalSettingsPage.verifyTitle(titleMeta)
-        loginPage.waitTime(delay);
-        generalSettingsPage.editMetaDescription(descriptionMeta)
-        loginPage.waitTime(delay);
-        generalSettingsPage.saveChanges()
-       
-    })
 
     it('Cambiar privacidad del sitio - Configuracion General', () => {
         loginPage.enterUser(user)
@@ -87,7 +71,26 @@ describe('Manage General Settings', () => {
         sitePage.irAConfiguracionGeneral()
         loginPage.waitTime(delay);
         generalSettingsPage.changePrivacy()
-        generalSettingsPage.saveChanges()        
+        generalSettingsPage.saveChanges()
+        loginPage.waitTime(delay);
+        generalSettingsPage.verifyPrivate()        
+        
+    })
+
+    it('Editar Lenguaje en Configuracion General', () => {
+        loginPage.enterUser(user)
+        loginPage.enterPassword(password)
+        loginPage.clickOnSignIn()
+        loginPage.verificarLogin()
+        sitePage.irAConfiguracionGeneral()
+        loginPage.waitTime(delay)
+        generalSettingsPage.clickOnExpanForLanguage()
+        loginPage.waitTime(delay)
+        generalSettingsPage.editLanguage(language)
+        loginPage.waitTime(delay)
+        generalSettingsPage.saveChanges()
+        generalSettingsPage.verifyLanguage(language)
+
         
     })
 
