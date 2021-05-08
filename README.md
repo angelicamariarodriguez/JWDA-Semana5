@@ -251,7 +251,7 @@ https://user-images.githubusercontent.com/78746286/117514980-c1e72300-af5a-11eb-
 
 # Video de la funcionalidad Manage Tags
 
-
+https://user-images.githubusercontent.com/78655008/117552025-a178a080-b00e-11eb-8630-4ee0fdc33056.mp4
 
 
 ## Licencia 📄
