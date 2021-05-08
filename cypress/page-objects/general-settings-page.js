@@ -26,7 +26,7 @@ export class GeneralSettingsPage{
 
     clickOnExpanForMetaSettings(){
 
-        cy.xpath('(//button[@class="gh-btn"])[6]').click({force:true})
+        cy.xpath('(//button[@class="gh-btn"])[5]').click({force:true})
 
 
        

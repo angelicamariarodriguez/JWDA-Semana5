@@ -60,26 +60,13 @@ describe('Manage General Settings', () => {
         
     })
 
-    it('Cambiar privacidad del sitio - Configuracion General', () => {
-        loginPage.enterUser(user)
-        loginPage.enterPassword(password)
-        loginPage.clickOnSignIn()
-        loginPage.verificarLogin()
-        sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(delay);
-        generalSettingsPage.changePrivacy()
-        generalSettingsPage.saveChanges()        
-        
-    })
-
-
     it('Editar Meta titulo y Meta descripcion en Configuracion General', () => {
         loginPage.enterUser(user)
         loginPage.enterPassword(password)
         loginPage.clickOnSignIn()
         loginPage.verificarLogin()
         sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(delay);
+        loginPage.waitTime(1000);
         generalSettingsPage.clickOnExpanForMetaSettings()
         loginPage.waitTime(delay);
         generalSettingsPage.editMetaTitle(titleMeta)
@@ -92,8 +79,16 @@ describe('Manage General Settings', () => {
        
     })
 
-
-
-
+    it('Cambiar privacidad del sitio - Configuracion General', () => {
+        loginPage.enterUser(user)
+        loginPage.enterPassword(password)
+        loginPage.clickOnSignIn()
+        loginPage.verificarLogin()
+        sitePage.irAConfiguracionGeneral()
+        loginPage.waitTime(delay);
+        generalSettingsPage.changePrivacy()
+        generalSettingsPage.saveChanges()        
+        
+    })
 
 })
