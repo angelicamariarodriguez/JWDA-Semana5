@@ -3,9 +3,11 @@ export class LoginPages {
       cy.visit(url);
    }
 
-    waitTime(delay){
-        cy.wait(delay);
-    }
+   waitTime(delay, version , scenario, test, id){
+    cy.wait(delay);
+    var fileName = test+"_"+id;
+    cy.screenshot(`./${version}/${scenario}/${test}/${fileName}`);
+}
 
     CLickItem(search, index, force ){
 	  cy.get(search).then($button => {

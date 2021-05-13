@@ -7,8 +7,10 @@ export class LoginPage {
         cy.visit(url)
     }
 
-    waitTime(delay){
+    waitTime(delay, version , scenario, test, id){
         cy.wait(delay);
+        var fileName = test+"_"+id;
+        cy.screenshot(`./${version}/${scenario}/${test}/${fileName}`);
     }
 
     enterUser(user){
