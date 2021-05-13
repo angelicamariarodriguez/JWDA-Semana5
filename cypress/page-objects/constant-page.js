@@ -1,6 +1,6 @@
 export class Constant_PAGES {
-    static USER = 'd.herrerag@uniandes.edu.co';
-    static PASSWORD = 'UQdn72A9vdxH64y';
+    static USER = 'rodrigueztorresnancy468@gmail.com';
+    static PASSWORD = 'M4r14t0rr3s*';
     static BASE_URL = 'http://localhost:2368/'
     static DELAY = 300;
     static NEW_TITLE= 'Nuevo titulo';
