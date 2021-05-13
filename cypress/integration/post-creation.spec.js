@@ -11,8 +11,13 @@ const faker = require('faker');
 const userInputID = "ember8";
 const passwordInputID = "ember10";
 const loginButtonID =  "ember12";
-const userNameLogin = Constant_PAGES.USER
-const passwordLogin = Constant_PAGES.PASSWORD
+const userNameLogin = Constant_PAGES.USER;
+const passwordLogin = Constant_PAGES.PASSWORD;
+
+const scenario = "post_creation";
+const version= "3.3.0";
+let test="";
+let id = 0;
 
 
 let postCreation = new PostCreationPage;
@@ -20,82 +25,115 @@ describe('Post creation', () => {
     
     beforeEach(() => {
       postCreation.navigate(url);
-      postCreation.waitTime(delay);
+
     })
 
     it('Ingresar con credenciales validos y crear un post con titulo haciendo uso de boton "+"', () => {
-        
-        
+
+        test = 'post_creation_using_plus_button';
+        id=0;
+
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
         postCreation.fillOutInput(userNameLogin, `[id^=${userInputID}]`);
         postCreation.fillOutInput(passwordLogin, `[id^=${passwordInputID}]`);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
+
         postCreation.clickButton(`[id^=${loginButtonID}]`, 0);
 
         postCreation.checkElementToHaveTextContent('.gh-user-email', userNameLogin);
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         postCreation.clickOnNewPostButton('.gh-nav-manage .gh-secondary-action')
         postCreation.checkElementContent('.gh-editor-header','New')
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         let postTitle = faker.lorem.sentence();
 
         postCreation.typeTextPostTitle('.gh-editor-title',postTitle);
         postCreation.savePostChanges();
         postCreation.goToPostList();
-        postCreation.waitTime(delay);
+        postCreation.waitTime(1000, version, scenario, test, id);
+        id++;
 
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
-        postCreation.checksEspecificPostFromPostListByTitle(postTitle);                
+        postCreation.checksEspecificPostFromPostListByTitle(postTitle); 
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;               
     })
 
     it('Ingresar con credenciales validos y crear un post con titulo usando boton "new post"', () => {
+
+        test = 'post_creation_using_new_post_button';
+        id=0;
+
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
         postCreation.fillOutInput(userNameLogin, `[id^=${userInputID}]`);
         postCreation.fillOutInput(passwordLogin, `[id^=${passwordInputID}]`);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
         postCreation.clickButton(`[id^=${loginButtonID}]`, 0);
 
         postCreation.checkElementToHaveTextContent('.gh-user-email', userNameLogin);
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         postCreation.goToPostList();
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
 
         postCreation.clickButton(`.gh-btn-green`, 0);
         postCreation.checkElementContent('.gh-editor-header','New')
-        postCreation.waitTime(delay);
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         let postTitle = faker.lorem.sentence();
 
         postCreation.typeTextPostTitle('.gh-editor-title',postTitle);
         postCreation.savePostChanges();
+
         postCreation.goToPostList();
         
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
-
         postCreation.checksEspecificPostFromPostListByTitle(postTitle);  
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
     
 
     })
 
     it('Ingresar con credenciales validos y crear un post  publico con titulo usando boton "new post" ', () => {
+        
+        test = 'post_creation_published';
+        id=0;
+
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
+        
         postCreation.fillOutInput(userNameLogin, `[id^=${userInputID}]`);
         postCreation.fillOutInput(passwordLogin, `[id^=${passwordInputID}]`);
         postCreation.clickButton(`[id^=${loginButtonID}]`, 0);
 
         postCreation.checkElementToHaveTextContent('.gh-user-email', userNameLogin);
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         postCreation.goToPostList();
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
 
         postCreation.clickButton(`.gh-btn-green`, 0);
         postCreation.checkElementContent('.gh-editor-header','New')
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         let postTitle = faker.lorem.sentence();
 
@@ -108,35 +146,49 @@ describe('Post creation', () => {
         postCreation.goToPostByTitle(postTitle);
 
         postCreation.selectsActualPostToBePublished();
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
   
         postCreation.goToPostList();
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
        
-        postCreation.checksEspecificPostFromPostListByTitle(postTitle);  
-        postCreation.filterPostListByPublished();
+        postCreation.checksEspecificPostFromPostListByTitle(postTitle); 
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++; 
 
 
     });
 
     it('Ingresar con credenciales validos y crear un post programado para publicarse (scheduled) en 4 minutos con titulo usando boton "new post"', () => {
+        test = 'post_creation_scheduled';
+        id=0;
+
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
+       
         postCreation.fillOutInput(userNameLogin, `[id^=${userInputID}]`);
         postCreation.fillOutInput(passwordLogin, `[id^=${passwordInputID}]`);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
         postCreation.clickButton(`[id^=${loginButtonID}]`, 0);
 
         postCreation.checkElementToHaveTextContent('.gh-user-email', userNameLogin);
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         postCreation.goToPostList();
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
 
         postCreation.clickButton(`.gh-btn-green`, 0);
         postCreation.checkElementContent('.gh-editor-header','New')
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         let postTitle = faker.lorem.sentence();
 
@@ -148,14 +200,18 @@ describe('Post creation', () => {
         postCreation.goToPostByTitle(postTitle);
         postCreation.selectsActualPostToBeScheduled();
  
-        postCreation.waitTime(delay);
+           postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
 
         postCreation.goToPostList();
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
-        postCreation.waitTime(delay);
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++;
        
-        postCreation.checksEspecificPostFromPostListByTitle(postTitle);  
-        postCreation.filterPostListByScheduled();
+        postCreation.checksEspecificPostFromPostListByTitle(postTitle); 
+        postCreation.waitTime(delay, version, scenario, test, id);
+        id++; 
+
 
     });
 

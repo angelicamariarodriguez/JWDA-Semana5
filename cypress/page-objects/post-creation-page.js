@@ -16,8 +16,10 @@ export class PostCreationPage{
     navigate(url){
         cy.visit(url);
     }
-    waitTime(delay){
+    waitTime(delay, version , scenario, test, id){
         cy.wait(delay);
+        var fileName = test+"_"+id;
+        cy.screenshot(`./${version}/${scenario}/${test}/${fileName}`);
     }
     checkElementToHaveTextContent(classSelector, expectedText){
         cy.get(classSelector).should('have.text', expectedText);
@@ -61,7 +63,7 @@ export class PostCreationPage{
     }
     filterPostListByScheduled(){
         cy.get('.gh-contentfilter-type').click();
-        cy.get('ul li[data-option-index="1"]').click();
+        cy.get('ul li[data-option-index="3"]').click();
     }
     sortPostListByNewestToOldest(){
         cy.get('.gh-contentfilter-sort').click();
