@@ -11,7 +11,10 @@ const title = Constant_PAGES.NEW_TITLE
 const description = Constant_PAGES.NEW_DESCRIPTION
 const language = Constant_PAGES.NEW_LANGUAJE
 const timeZone = Constant_PAGES.TIME_ZONE
-
+const scenario = "manage_settings";
+const version= "3.3.0";
+let test="";
+let id = 0;
 
 describe('Manage General Settings', () => {
 
@@ -25,71 +28,154 @@ describe('Manage General Settings', () => {
     })
 
     it('Editar titulo y descripcion en Configuracion General', () => {
+        test = 'edit_title_and_description';
+        id=0;
+
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterUser(user)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterPassword(password)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.clickOnSignIn()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.verificarLogin()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.clickOnExpanForTitleAndDescription()
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.editTitle(title)
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.editDescription(description)
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.saveChanges()
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.verifyTitle(title)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.verifyDescription(description)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
 
         
     })
 
     
     it('Editar zona horaria en Configuracion General', () => {
+        test = 'edit_time_zone';
+        id=0;
+
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
+
         loginPage.enterUser(user)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterPassword(password)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.clickOnSignIn()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.verificarLogin()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.clickOnExpanForTimeZone()
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.selectTimeZone(timeZone)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.saveChanges()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.verifyTimeZoneSelected(timeZone)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
 
         
     })
 
 
     it('Cambiar privacidad del sitio - Configuracion General', () => {
+        test = 'edit_privacy_of_site';
+        id=0;
+
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterUser(user)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterPassword(password)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.clickOnSignIn()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.verificarLogin()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(delay);
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.changePrivacy()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.saveChanges()
-        loginPage.waitTime(delay);
-        generalSettingsPage.verifyPrivate()        
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
+        generalSettingsPage.verifyPrivate()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;        
         
     })
 
     it('Editar Lenguaje en Configuracion General', () => {
+        test = 'edit_language_of_site';
+        id=0;
+
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterUser(user)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.enterPassword(password)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.clickOnSignIn()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         loginPage.verificarLogin()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         sitePage.irAConfiguracionGeneral()
-        loginPage.waitTime(delay)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.clickOnExpanForLanguage()
-        loginPage.waitTime(delay)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.editLanguage(language)
-        loginPage.waitTime(delay)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.saveChanges()
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
         generalSettingsPage.verifyLanguage(language)
+        generalSettingsPage.waitTime(delay, version, scenario, test, id);
+        id++;
 
         
     })

@@ -5,6 +5,7 @@ const delay = Constant_PAGES.DELAY
 const user = Constant_PAGES.USER
 const password = Constant_PAGES.PASSWORD
 
+
 describe('Manage pages', () => {
 
   const managePages = new ManagePages();

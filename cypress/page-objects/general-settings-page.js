@@ -1,6 +1,13 @@
 /// <reference types="cypress-xpath" />
 export class GeneralSettingsPage{
 
+
+    waitTime(delay, version , scenario, test, id){
+        cy.wait(delay);
+        var fileName = test+"_"+id;
+        cy.screenshot(`./${version}/${scenario}/${test}/${fileName}`);
+    }
+    
     clickOnExpanForTitleAndDescription(){
 
         cy.get('[class^=gh-btn]').then($button => {
