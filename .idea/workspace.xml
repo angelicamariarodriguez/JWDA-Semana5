@@ -6,10 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/page-objects/constant-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/constant-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/page-objects/manage-pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/manage-pages.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,18 +107,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="673" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1620395058662" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1621092982904">
+    <state x="92" y="92" width="1736" height="856" maximized="true" key="DiffContextDialog" timestamp="1621116665171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621092982904" />
+    <state x="92" y="92" width="1736" height="856" maximized="true" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621116665171" />
     <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1620421900866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620421900866" />
-    <state x="744" y="222" key="RollbackChangesDialog" timestamp="1620420099923">
+    <state x="744" y="222" key="RollbackChangesDialog" timestamp="1621116618272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="744" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620420099923" />
+    <state x="744" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621116618272" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1620419350568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

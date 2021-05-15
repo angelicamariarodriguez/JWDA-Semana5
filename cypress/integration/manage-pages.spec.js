@@ -32,9 +32,6 @@ describe('Manage pages', () => {
       managePages.CLickItem('[id^=ember12]', 0, true);
       managePages.waitTime(delay, version, scenario, test, id);
       id++;
-      managePages.CLickItem('[id^=ember30]', 0, true);
-      managePages.waitTime(delay, version, scenario, test, id);
-      id++;
       managePages.searchByContains('body', 'Pages');
       managePages.waitTime(delay, version, scenario, test, id);
       id++;
@@ -63,7 +60,6 @@ describe('Manage pages', () => {
         managePages.CLickItem('[id^=ember12]', 0, true);
         managePages.waitTime(delay, version, scenario, test, id);
         id++;
-        managePages.CLickItem('[id^=ember30]', 0, true);
         managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay, version, scenario, test, id);
         id++;
@@ -90,9 +86,6 @@ describe('Manage pages', () => {
         managePages.CLickItem('[id^=ember12]', 0, true);
         managePages.waitTime(delay, version, scenario, test, id);
         id++;
-        managePages.CLickItem('[id^=ember30]', 0, true);
-        managePages.waitTime(delay, version, scenario, test, id);
-        id++;
         managePages.searchByContains('body', 'Pages');
         managePages.waitTime(delay, version, scenario, test, id);
         id++;
@@ -117,9 +110,6 @@ describe('Manage pages', () => {
         managePages.waitTime(delay, version, scenario, test, id);
         id++;
         managePages.CLickItem('[id^=ember12]', 0, true);
-        managePages.waitTime(delay, version, scenario, test, id);
-        id++;
-        managePages.CLickItem('[id^=ember30]', 0, true);
         managePages.waitTime(delay, version, scenario, test, id);
         id++;
         managePages.searchByContains('body', 'Pages');
