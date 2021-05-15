@@ -101,6 +101,7 @@ describe('Post creation', () => {
         postCreation.goToPostList();
         
         postCreation.checkElementContent('.gh-canvas-title', 'Posts');
+        cy.wait(1000);        
         postCreation.checksEspecificPostFromPostListByTitle(postTitle);  
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
