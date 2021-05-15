@@ -60,6 +60,7 @@ describe('Post creation', () => {
         id++;
 
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+        cy.wait(1000);
         postCreation.checksEspecificPostFromPostListByTitle(postTitle); 
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;               
@@ -101,6 +102,7 @@ describe('Post creation', () => {
         postCreation.goToPostList();
         
         postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+        cy.wait(1000);
         postCreation.checksEspecificPostFromPostListByTitle(postTitle);  
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
