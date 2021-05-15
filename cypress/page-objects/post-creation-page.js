@@ -45,7 +45,7 @@ export class PostCreationPage{
     }
     checksEspecificPostFromPostListByTitle(postTitle){
         cy.get('ol').find('h3').contains(postTitle)
-        .should('have.text', `\n        ${postTitle}\n    `);  
+        .should('have.text', `\n            ${postTitle}\n        `);  
     }
     selectsActualPostToBePublished(){
         cy.get('.gh-publishmenu').click();

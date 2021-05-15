@@ -15,7 +15,7 @@ const userNameLogin = Constant_PAGES.USER;
 const passwordLogin = Constant_PAGES.PASSWORD;
 
 const scenario = "post_creation";
-const version= "3.3.0";
+const version= "3.42.5";
 let test="";
 let id = 0;
 
@@ -37,13 +37,13 @@ describe('Post creation', () => {
         id++;
         postCreation.fillOutInput(userNameLogin, `[id^=${userInputID}]`);
         postCreation.fillOutInput(passwordLogin, `[id^=${passwordInputID}]`);
-           postCreation.waitTime(delay, version, scenario, test, id);
+        postCreation.waitTime(delay, version, scenario, test, id);
         id++;
 
         postCreation.clickButton(`[id^=${loginButtonID}]`, 0);
 
         postCreation.checkElementToHaveTextContent('.gh-user-email', userNameLogin);
-           postCreation.waitTime(delay, version, scenario, test, id);
+        postCreation.waitTime(delay, version, scenario, test, id);
         id++;
 
         postCreation.clickOnNewPostButton('.gh-nav-manage .gh-secondary-action')
@@ -59,7 +59,7 @@ describe('Post creation', () => {
         postCreation.waitTime(1000, version, scenario, test, id);
         id++;
 
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+        postCreation.checkElementContent('.gh-canvas-title', 'Posts');
         postCreation.checksEspecificPostFromPostListByTitle(postTitle); 
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;               
@@ -83,7 +83,7 @@ describe('Post creation', () => {
         id++;
 
         postCreation.goToPostList();
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+      postCreation.checkElementContent('.gh-canvas-title', 'Posts');
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
 
@@ -100,7 +100,7 @@ describe('Post creation', () => {
 
         postCreation.goToPostList();
         
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+        postCreation.checkElementContent('.gh-canvas-title', 'Posts');
         postCreation.checksEspecificPostFromPostListByTitle(postTitle);  
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
@@ -125,7 +125,7 @@ describe('Post creation', () => {
         id++;
 
         postCreation.goToPostList();
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+      postCreation.checkElementContent('.gh-canvas-title', 'Posts');
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
 
@@ -141,7 +141,7 @@ describe('Post creation', () => {
         postCreation.savePostChanges();
         postCreation.goToPostList();
         
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+      postCreation.checkElementContent('.gh-canvas-title', 'Posts');
 
         postCreation.goToPostByTitle(postTitle);
 
@@ -151,7 +151,7 @@ describe('Post creation', () => {
 
   
         postCreation.goToPostList();
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+        postCreation.checkElementContent('.gh-canvas-title', 'Posts');
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
        
@@ -180,7 +180,7 @@ describe('Post creation', () => {
         id++;
 
         postCreation.goToPostList();
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+      postCreation.checkElementContent('.gh-canvas-title', 'Posts');
            postCreation.waitTime(delay, version, scenario, test, id);
         id++;
 
@@ -196,7 +196,7 @@ describe('Post creation', () => {
         postCreation.savePostChanges();
         postCreation.goToPostList();
         
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+      postCreation.checkElementContent('.gh-canvas-title', 'Posts');
         postCreation.goToPostByTitle(postTitle);
         postCreation.selectsActualPostToBeScheduled();
  
@@ -204,7 +204,7 @@ describe('Post creation', () => {
         id++;
 
         postCreation.goToPostList();
-        postCreation.checkElementToHaveTextContent('.gh-canvas-title', 'Posts');
+        postCreation.checkElementContent('.gh-canvas-title', 'Posts');
         postCreation.waitTime(delay, version, scenario, test, id);
         id++;
        
