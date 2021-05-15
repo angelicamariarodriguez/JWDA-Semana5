@@ -12,7 +12,7 @@ const description = Constant_PAGES.NEW_DESCRIPTION
 const language = Constant_PAGES.NEW_LANGUAJE
 const timeZone = Constant_PAGES.TIME_ZONE
 const scenario = "manage_settings";
-const version= "3.42.5";
+const version= "3.3.0";
 let test="";
 let id = 0;
 
