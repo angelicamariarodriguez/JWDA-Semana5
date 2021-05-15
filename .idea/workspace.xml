@@ -5,7 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="" />
+    <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/manage-pages.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/page-objects/constant-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/constant-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/page-objects/manage-pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/manage-pages.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
