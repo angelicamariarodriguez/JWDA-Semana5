@@ -6,7 +6,7 @@ const user = Constant_PAGES.USER
 const password = Constant_PAGES.PASSWORD
 const faker = require('faker');
 const scenario = "login";
-const version= "3.3.0";
+const version= "3.42.5";
 let test="";
 let id = 0;
 
@@ -34,7 +34,7 @@ describe('Login Pages', () => {
       loginPages.CLickItem('[id^=ember12]', 0);
       loginPages.waitTime(delay, version, scenario, test, id);
       id++;
-      loginPages.searchTheTextExists('body','Access denied.');
+      loginPages.searchTheTextExists('body','There is no user with that email address.');
       loginPages.waitTime(delay, version, scenario, test, id);
     id++;
   })
@@ -94,7 +94,7 @@ it('Login with invalid user and valid password    ', () => {
   loginPages.CLickItem('[id^=ember12]', 0);
   loginPages.waitTime(delay, version, scenario, test, id);
   id++;
-  loginPages.searchTheTextExists('body','Access denied.');
+  loginPages.searchTheTextExists('body','There is no user with that email address.');
   loginPages.waitTime(delay, version, scenario, test, id);
   id++;
 })
