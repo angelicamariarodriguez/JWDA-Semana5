@@ -7,6 +7,14 @@ export class ManagePages {
         cy.wait(delay);
     }
 
+
+    waitTime(delay, version , scenario, test, id){
+        cy.wait(delay);
+        const fileName = test + "_" + id;
+        cy.screenshot(`./${version}/${scenario}/${test}/${fileName}`);
+    }
+
+
     CLickItem(search, index, force ){
 	  cy.get(search).then($button => {
           const buttonLink = $button.get(index);

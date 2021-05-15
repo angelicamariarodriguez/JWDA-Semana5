@@ -5,7 +5,83 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="" />
+    <list default="true" id="51982a91-d461-44e3-93a2-3b3b89efa929" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/page-objects/constant-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/constant-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_inalid_user_and_valid_password/login_with_inalid_user_and_valid_password_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_incorrect_user_and_password/login_with_incorrect_user_and_password_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_valid_user_and_password/login_with_valid_user_and_password_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/3.42.5/login/login_with_valid_user_and_password/login_with_valid_user_and_password_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/Login Pages -- Login with valid user and invalid password (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/Login Pages -- Login with valid user and invalid password (failed).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/Login Pages -- Login with valid user and password (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login-pages.spec.js/Login Pages -- Login with valid user and password (failed).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_language_of_site/edit_language_of_site_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_language_of_site/edit_language_of_site_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_language_of_site/edit_language_of_site_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_language_of_site/edit_language_of_site_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_privacy_of_site/edit_privacy_of_site_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_privacy_of_site/edit_privacy_of_site_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_privacy_of_site/edit_privacy_of_site_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_privacy_of_site/edit_privacy_of_site_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_time_zone/edit_time_zone_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_time_zone/edit_time_zone_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_time_zone/edit_time_zone_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_time_zone/edit_time_zone_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_title_and_description/edit_title_and_description_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_title_and_description/edit_title_and_description_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_title_and_description/edit_title_and_description_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/3.42.5/manage_settings/edit_title_and_description/edit_title_and_description_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/Manage General Settings -- Cambiar privacidad del sitio - Configuracion General (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/Manage General Settings -- Editar Lenguaje en Configuracion General (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/Manage General Settings -- Editar titulo y descripcion en Configuracion General (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/Manage General Settings -- Editar zona horaria en Configuracion General (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/undefined/undefined/undefined/undefined_undefined (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/undefined/undefined/undefined/undefined_undefined (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/undefined/undefined/undefined/undefined_undefined (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-general-settings.spec.js/undefined/undefined/undefined/undefined_undefined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages/search_by_published_pages_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages/search_by_published_pages_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages/search_by_published_pages_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages/search_by_published_pages_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_and_author/search_by_published_pages_and_author_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_and_author/search_by_published_pages_and_author_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_and_author/search_by_published_pages_and_author_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_and_author/search_by_published_pages_and_author_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_and_author/search_by_published_pages_tag_and_author_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_and_author/search_by_published_pages_tag_and_author_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_and_author/search_by_published_pages_tag_and_author_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_and_author/search_by_published_pages_tag_and_author_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_oldest_and_author/search_by_published_pages_tag_oldest_and_author_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_oldest_and_author/search_by_published_pages_tag_oldest_and_author_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_oldest_and_author/search_by_published_pages_tag_oldest_and_author_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/3.42.5/manage_pages/search_by_published_pages_tag_oldest_and_author/search_by_published_pages_tag_oldest_and_author_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/Manage pages -- Should filter the pages with the next items published pages (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/Manage pages -- Should filter the pages with the next items published pages and author (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/Manage pages -- Should filter the pages with the next items published pages,  author, tag and Oldest (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/Manage pages -- Should filter the pages with the next items published pages, author  and tag (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/undefined/undefined/undefined/undefined_undefined (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/undefined/undefined/undefined/undefined_undefined (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/undefined/undefined/undefined/undefined_undefined (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-pages.spec.js/undefined/undefined/undefined/undefined_undefined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_add_metadata/tags_manage_add_metadata_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_add_metadata/tags_manage_add_metadata_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_add_metadata/tags_manage_add_metadata_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_add_tag/tags_manage_add_tag_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_add_tag/tags_manage_add_tag_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_add_tag/tags_manage_add_tag_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_edit_tag/tags_manage_edit_tag_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_edit_tag/tags_manage_edit_tag_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/3.42.5/tags_manage/tags_manage_edit_tag/tags_manage_edit_tag_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/Manage Tags -- Login, adding a new tag, and validate it (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/Manage Tags -- Login, editing an existing tag, and validate it (failed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/undefined/undefined/undefined/undefined_undefined (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/undefined/undefined/undefined/undefined_undefined (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/manage-tags.spec.js/undefined/undefined/undefined/undefined_undefined.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
