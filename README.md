@@ -157,44 +157,56 @@ Este proyecto está probando las siguientes funcionalidades:
     - Iniciar sesión en Ghost ir a tags, agregar metadata y descripción de metadata a un tag existente
     - Iniciar sesión en Ghost ir a tags, eliminar un tag existente
 
-# Ejecutando las pruebas ⚙️
+# Ejecutando pruebas E2E sobre Ghost 3.3.0 ⚙️
 
-Para ejecutar unicamente debe  hacer lo siguiente:
+
+Para ejecutar  debe  hacer lo siguiente:
 
 ```
-Ubicarse en la carpeta donde realizo la instalación de las node modules
+Ubicarse en la carpeta donde realizo la instalación de las node modules e instalar las dependencias usando npm install
 ```
 
 ![npm install ](https://user-images.githubusercontent.com/78820446/117474290-68fa9900-af20-11eb-891f-1ef3f9145f92.PNG)
 
+1. **Para ejecutar las pruebas de la versión Ghost 3.3.0** debe ejecutar el comando **git checkout Ghost3.3.0**
+2. Asegurese de haber inicializado ghost en la versión 3.3.0
+3. Luego deberá modificar las variables **USER** y **PASSWORD** en el archivo **constant-page.js**, que está ubicado en el directorio **./cypress/page-objects/**, con sus credenciales registradas en Ghost 3.3.0. **Por ejemplo:
 
-Posteriormente debe editar el siguente archivo, este archivo se encuentra dentro de la carpeta principal:
 
-```
-costant-page.js
-```
-En el archivo costant-page.js en la carpeta page-objects editar las siguientes variables: 
-
-1. Remplace los valore de **USER** y **password**, por su usuario y contraseña que registró en Ghost, ejemplo:
-
-    **static USER = 'arodriguezt9509@gmail.com';
-    **static PASSWORD = '********';
-
-2. Asegurese que la url sea la siguiente: 
+    **"USER":"arodriguezt9509@gmail.com",**
+ 
+    **"PASSWORD":"********"
+    
+    Asegurese que la url sea la siguiente: 
+    
     **static BASE_URL = 'http://localhost:2368/'**
+      
+4. Asegurese de tener la vista del sitio como **pública**. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
 
-3. Asegurese de tener la vista del sitio como pública. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
+5. Por último, ejecute el siguiente comando: **cypress run --headless**, en este caso si realizo las configuraciones de una manera correcta deberán empezar a ejecutarse los tests, en caso contrario deberaá revisar alguno de los pasos de instalación. 
+
+# Ejecutando pruebas E2E sobre Ghost 3.42.5 ⚙️
+
+Para ejecutar unicamente debe  hacer lo siguiente:
+
+1. **Para ejecutar las pruebas de la versión Ghost 3.42.5** debe ejecutar el comando **git checkout Ghost3.42.5**
+2. Asegurese de haber inicializado Ghost en la versión 3.42.5
+3. Luego deberá modificar las variables **USER** y **PASSWORD** en el archivo **constant-page.js**, que está ubicado en el directorio **./cypress/page-objects/**, con sus credenciales registradas en Ghost 3.42.5. **Por ejemplo:
+
+
+    **"USER":"arodriguezt9509@gmail.com",**
+ 
+    **"PASSWORD":"********"
+    
+    Asegurese que la url sea la siguiente: 
+    
+    **static BASE_URL = 'http://localhost:2368/'**
+    
+4.  Asegurese de tener la vista del sitio como **pública**. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
 
 ![image](https://user-images.githubusercontent.com/78829003/117516478-d75e4c00-af5e-11eb-8002-3ff61f2e25d6.png)
 
-Por ultimo ya habiendo configurado los archivos y cambiado los datos por su  maquina unicamente queda ejecutar el siguiente comando:. 
-
-```
-cypress run --headless
-
-```
-
-Este comando empezara a ejecutar los test, deberan salir exitosos   en la consola 
+5. Por último, ejecute el siguiente comando: **cypress run --headless**, en este caso si realizo las configuraciones de una manera correcta deberán empezar a ejecutarse los tests, en caso contrario deberaá revisar alguno de los pasos de instalación. 
 
 
 ### Analice las pruebas end-to-end 🔩
