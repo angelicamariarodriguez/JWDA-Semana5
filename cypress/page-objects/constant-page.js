@@ -1,7 +1,7 @@
 export class Constant_PAGES {
 
-    static USER = 'prueba@gmail.com';
-    static PASSWORD = '123456789*';
+    static USER = 'jorge@gmail.com';
+    static PASSWORD = 'accedian1!';
     static BASE_URL = 'http://localhost:2368/'
     static DELAY = 600;
     static NEW_TITLE= 'Nuevo titulo';
