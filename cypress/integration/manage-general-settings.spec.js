@@ -24,7 +24,7 @@ describe('Manage General Settings', () => {
     let data = data_for_edit_title_and_description;
     let languages = data_for_edit_language;
 
-    /*for (let item = 0; item<20;item++){
+    for (let item = 0; item<20;item++){
         it('Editar titulo y descripcion en Configuracion General', () => {
 
             loginPage.enterUser(user)
@@ -48,7 +48,7 @@ describe('Manage General Settings', () => {
             cy.wait(delay)       
         });
     
-    }*/
+    }
 
 
     for (let item = 0; item<10;item++){
