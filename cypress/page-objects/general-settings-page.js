@@ -43,6 +43,9 @@ export class GeneralSettingsPage{
     }
 
     editTitle(newTitle){
+        if(newTitle==null){
+            newTitle=" "
+        }
         cy.get('input').then($field => {
             var title = $field.get(0);
             if(!Cypress.dom.isHidden(title)) {
@@ -53,6 +56,9 @@ export class GeneralSettingsPage{
     }
 
     editDescription(newDescription){
+        if(newDescription==null){
+            newDescription=" "
+        }
         cy.get('input').then($field => {
             var title = $field.get(1);
             if(!Cypress.dom.isHidden(title)) {
@@ -69,32 +75,86 @@ export class GeneralSettingsPage{
                cy.wrap(expand).click({force: true});	
             } 
         });
+        Cypress.on('uncaught:exception', (err, runnable) => {
+            // returning false here prevents Cypress from
+            // failing the test
+            return false
+          })
     }
 
 
-    verifyTitle(newTitle){
-        cy.get('input').then($field => {
-            var title = $field.get(0);
-            if(!Cypress.dom.isHidden(title)) {
-                cy.wrap(title).should('have.value', newTitle)	
-             } 
-        })
+    verifyTitle(newTitle){             
+
+        if(newTitle == null){
+            cy.xpath('(//p[@class="response"])[1]').should('have.text', "\n    Title can not be empty\n")
+        }else{
+        if(newTitle.length < 3){
+            cy.xpath('(//p[@class="response"])[1]').should('have.text', "\n    Title is too short\n")
+        }
+        if(newTitle.length > 150){
+            cy.xpath('(//p[@class="response"])[1]').should('have.text', "\n    Title is too long\n")
+        }else{
+            cy.get('input').then($field => {
+                var title = $field.get(0);
+                if(!Cypress.dom.isHidden(title)) {
+                    cy.wrap(title).should('have.value', newTitle)	
+                 } 
+            })
+        }
+    }
+
 
     }
 
     verifyDescription(newDescription){
-        cy.get('input').then($field => {
-            var description = $field.get(1);
-            if(!Cypress.dom.isHidden(description)) {
-                cy.wrap(description).should('have.value', newDescription)	
-             } 
-        })
+        if(newDescription == null){
+            cy.xpath('(//p[@class="response"])[2]').should('have.text', "\n    Description can not be empty\n")
+        }else{
+        if(newDescription.length < 5){
+            cy.xpath('(//p[@class="response"])[2]').should('have.text', "\n    Description is too short\n")
+        }
+        if(newDescription.length > 200){
+            cy.xpath('(//p[@class="response"])[2]').should('have.text', "\n    Description is too long\n")
+        }else{
+            cy.get('input').then($field => {
+                var description = $field.get(1);
+                if(!Cypress.dom.isHidden(description)) {
+                    cy.wrap(description).should('have.value', newDescription)	
+                 } 
+            })
+        }
+    }
 
     }
 
+
     verifyLanguage(newLanguage){
 
-        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').should('have.value', newLanguage)	
+        if(newLanguage == null){
+            cy.xpath('(//aside[@class="gh-alerts ember-view"])').should('be.visible')
+        }else{
+            
+            var numeros="0123456789";
+            let num=0;
+            let alp=0;
+            for(let j=0; j<newLanguage.length; j++){
+                for(let i=0; i<numeros.length; i++){
+                    if (numeros.charAt(i)== newLanguage.charAt(j)){
+                        num = num+1;
+                        break
+                    }else{
+                         alp =alp+1;
+                    }
+                }
+            }
+                  
+            if(num > 0){
+                cy.xpath('(//div[@class="gh-setting-last"])').should('have.value',"Language must contain only alpahabetic characters")
+            }else if(num == 0){
+                cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').should('have.value', newLanguage)
+            }
+            
+        }
 
     }
 
@@ -115,8 +175,12 @@ export class GeneralSettingsPage{
     
     editLanguage(newLanguage){
 
+        if(newLanguage==null){
+            cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').clear({force:true})
+        }else{
         cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').clear({force:true})
-        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').type(newLanguage, {force:true});	
+        cy.xpath('(//input[@class="ember-text-field gh-input ember-view"])[1]').type(newLanguage, {force:true});
+        }	
     }
 
     verifyPrivate(){
