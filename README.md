@@ -243,7 +243,7 @@ Puede observar que algunos de los casos ejecutados fallan debido a que no se ha 
 
 ![image](https://user-images.githubusercontent.com/78829003/119213954-a9adf280-ba88-11eb-9079-bb42fddb20cc.png)
 
-**Nota:** La descripción de la estrategia usada para la generación de datos a-priori y la definición de los oráculos, la puede encontrar como una página en la wiki de este repositorio.
+**Nota: La descripción de la estrategia usada para la generación de datos a-priori y la definición de los oráculos, la puede encontrar como una página en la wiki de este repositorio.**
 
 
 ## Construido con 🛠️
