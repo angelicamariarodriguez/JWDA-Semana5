@@ -208,10 +208,42 @@ Para ejecutar unicamente debe  hacer lo siguiente:
 
 5. Por último, ejecute el siguiente comando: **cypress run --headless**, en este caso si realizo las configuraciones de una manera correcta deberán empezar a ejecutarse los tests, en caso contrario deberaá revisar alguno de los pasos de instalación. 
 
+# Ejecutando pruebas E2E con generación de datos a-priori sobre Ghost 3.42.5 ⚙️
 
-### Analice las pruebas end-to-end 🔩
+Para ejecutar unicamente debe  hacer lo siguiente:
 
-En este caso para el analizis de las pruebas ejecutadas unicamente debe evidenciar los resultados de la consola y videos.
+1. **Para ejecutar las pruebas con generación de  datos a-priori sobre la versión Ghost 3.42.5** debe ejecutar el comando **git checkout PoolAPriori**
+2. Asegurese de haber inicializado Ghost en la versión 3.42.5
+3. Luego deberá modificar las variables **USER** y **PASSWORD** en el archivo **constant-page.js**, que está ubicado en el directorio **./cypress/page-objects/**, con sus credenciales registradas en Ghost 3.42.5. **Por ejemplo:
+
+
+    **"USER":"arodriguezt9509@gmail.com",**
+ 
+    **"PASSWORD":"********"
+    
+    Asegurese que la url sea la siguiente: 
+    
+    **static BASE_URL = 'http://localhost:2368/'**
+    
+4.  Asegurese de tener la vista del sitio como **pública**. Para esto debe ir a "General Settings" en Ghost y en la sección "Advanced Settings" debe tener deshabilitada la opción de "Make this site private", como se observa a continuación.
+
+![image](https://user-images.githubusercontent.com/78829003/117516478-d75e4c00-af5e-11eb-8002-3ff61f2e25d6.png)
+
+5. Por último, ejecute el siguiente comando: **cypress run --headless**, en este caso si realizo las configuraciones de una manera correcta deberán empezar a ejecutarse los tests, en caso contrario deberaá revisar alguno de los pasos de instalación. Tenga en cuenta que se ejecutarán 20 escenarios con datos diferentes generados para la funcionalidad "Editar titulo y descripcion en Configuracion General" y 10 escenarios con datos diferentes generados para la funcionalidad " Editar Lenguaje en Configuracion General"
+
+
+### Analice las pruebas end-to-end con generación de datos a-priori🔩
+
+Luego de ejecutar las pruebas, como se indicó anteriormente, podrá ver los resultados en la consola, de la siguiente manera:
+
+![image](https://user-images.githubusercontent.com/78829003/119213936-913dd800-ba88-11eb-898f-5f3e3cfbb5d7.png)
+
+
+Puede observar que algunos de los casos ejecutados fallan debido a que no se ha cumplido el oráculo definido. La información del resultado esperado y el resultado actual, para cada uno de los casos fallidos, la puede encontrar igualmente en la consola.
+
+![image](https://user-images.githubusercontent.com/78829003/119213954-a9adf280-ba88-11eb-9079-bb42fddb20cc.png)
+
+**Nota:** La descripción de la estrategia usada para la generación de datos a-priori y la definición de los oráculos, la puede encontrar como una página en la wiki de este repositorio.
 
 
 ## Construido con 🛠️
